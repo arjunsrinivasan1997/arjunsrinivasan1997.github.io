@@ -1,4 +1,14 @@
-.testing{
-    color: black;
-    font: Sans Serif;
+#header{
+  background-color:blue;
+  color:white;
+  align: right;
+}
+#header-text{
+  float: left;
+  font-size: 16px;
+}
+
+#nav li{
+  display: inline;
+  padding: 3px
 }
