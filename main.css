@@ -1,5 +1,7 @@
+#container{
+    background-color: blue;
+}
 #header{
-  background-color:blue;
   color:white;
   align: right;
 }
