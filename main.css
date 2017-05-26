@@ -5,10 +5,11 @@
 }
 #header-text{
   float: left;
-  font-size: 16px;
+  font-size: 32px;
 }
 
 #nav li{
   display: inline;
   padding: 3px
+  font-size: 32px;
 }
