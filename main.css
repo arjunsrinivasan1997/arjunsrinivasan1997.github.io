@@ -1,17 +1,31 @@
-#container{
-    background-color: blue;
+#header-container{
+    background-image: url(https://c1.staticflickr.com/6/5298/5412578628_b15c9bcae9_b.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
 }
-#header{
-  color:white;
-  align: right;
-}
-#header-text{
-  float: left;
-  font-size: 32px;
+#nav-bar{
+    border-bottom: solid;
+    border-color:black;
 }
 
-#nav li{
+#nav-bar li{
+    color:black;
   display: inline;
-  padding: 3px
-  font-size: 32px;
+  padding: 10px;
+  font-size: 20px;
+}
+#nav-bar li:hover{
+    color: white;
+}
+.name {
+    color: navy;
+    border: 20px;
+    padding: 50px;
+}
+#about-me-container{
+    background-color: grey;
+
 }
