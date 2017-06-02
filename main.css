@@ -1,31 +1,40 @@
 #header-container{
-    background-image: url(https://c1.staticflickr.com/6/5298/5412578628_b15c9bcae9_b.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/66/UC-Berkeley-006-VLSB-downtown-Berkeley.jpg);
+    background-size:  100%;
+    height:800px;
+    padding:0px;
+}
+header {
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 30px;
+}
+#nav-bar-link{
+    top:5px;
+    padding-top: 10px;
+    padding-left:10px;
+    padding-right: 10px;
+    color:yellow;
+    size:30px;
+}
+#nav-bar-link:hover{
+    color:blue;
+}
 
-}
-#nav-bar{
-    border-bottom: solid;
-    border-color:black;
-}
-
-#nav-bar li{
-    color:black;
-  display: inline;
-  padding: 10px;
-  font-size: 20px;
-}
-#nav-bar li:hover{
-    color: white;
-}
-.name {
-    color: navy;
-    border: 20px;
-    padding: 50px;
-}
-#about-me-container{
+#about-me{
+    vertical-align: middle;
     background-color: grey;
-
+    height:1000px;
 }
+#skills{
+    vertical-align: middle;
+    background-color: black;
+    height: 1000px;
+}
+
+
+
+
+
+
