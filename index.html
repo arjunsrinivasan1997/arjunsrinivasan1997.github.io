@@ -1,27 +1,114 @@
-
 <!--suppress ALL -->
 <head>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <!-- JQuery Scripts for NavBarColorChangeAndGraphAnimation.js. Using Google JQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
-<section id ="header">
-    <div id ="header-container">
-        <header id="nav-bar" align = "center">
+<body margin="0px">
+    <section id="header">
+        <div id="header-container">
+            <header id="nav-bar" align="center">
                 <nav>
                     <a id="nav-bar-link" href="#about-me">About Me</a>
                     <a id="nav-bar-link" href="#skills">Skills</a>
-                    <a id = "nav-bar-link" href="#projects">Projects</a>
-                    <a id ="nav-bar-link" href="#resume">Resume</a>
-                    <a id = "nav-bar-link" href="#contact">Contact</a>
+                    <a id="nav-bar-link" href="#projects">Projects</a>
+                    <a id="nav-bar-link" href="#resume">Resume</a>
+                    <a id="nav-bar-link" href="#contact">Contact</a>
                 </nav>
-        </header>
-    </div>
-</section>
-<section id ="about-me"></section>
-<section id ="skills"></section>
-<section id ="projects"></section>
-<section id ="resume"></section>
-<section id ="contact"></section>
-<section id ="test"></section>
-<script src="NavBarColorChange.js"></script>
+            </header>
+            <div id="name" align="center">
+                Arjun Srinivasan
+            </div>
+            <hr id="spacer">
+            <div id="other-info" align="center">
+                B.A. Computer Science
+                <br>
+                University of California-Berkeley
+                <br>
+                Expected Graduation:Spring 2020
+            </div>
+
+        </div>
+    </section>
+    <section id="about-me">
+
+    </section>
+    <section id="skills">
+        <div id="graph-container">
+            <div id="graph-bar-container">
+                <div id="graph-bar-text">
+                        Java
+                    </div>
+                <div id="java-bar"></div>
+                <img class="java-image" src="http://xahlee.info/UnixResource_dir/gki/Java_logo_new.svg" alt="Java Logo">
+            </div>
+            <div id="graph-bar-container">
+                <div id="graph-bar-text">
+                        Python
+                    </div>
+                <div id="python-bar"></div>
+                <img class="python-image" src="http://idroot.net/wp-content/uploads/2015/09/python-logo.jpg" alt="Python Logo">
+            </div>
+            <div id="graph-bar-container">
+                <div id="graph-bar-text">
+                    VBA
+                </div>
+                <div id="VBA-bar"></div>
+                <img  class="VBA-image" src="http://www.bipolarbob.me/dynamic-content/wp-content/uploads/2016/06/VBA-logo-1.jpg" alt="VBA Logo">
+            </div>
+            <div id="graph-bar-container">
+                <div id="graph-bar-text">
+                    HTML
+                </div>
+                <div id="HTML5-bar"></div>
+                <img  class="HTML5-image" src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" alt="HTML 5 Logo">
+            </div>
+            <div id="graph-bar-container">
+                <div id="graph-bar-text">
+                    CSS
+                </div>
+                <div id="CSS3-bar"></div>
+                <img  class="CSS3-image" src="https://cdn.worldvectorlogo.com/logos/css3.svg" alt="HTML 5 Logo">
+            </div>
+            <div id="graph-bar-container">
+                <div id="graph-bar-text">
+                    JavaScript
+                </div>
+                <div id="JavaScript-bar"></div>
+                <img  class="JavaScript-image" src="https://www.brandsoftheworld.com/sites/default/files/styles/logo-thumbnail/public/082014/js1_0.png?itok=BqOjTfHU" alt="CSS 3 Logo">
+            </div>
+
+            <div id="graph-bar-container">
+                <div id="graph-bar-text">
+                    jQuery
+                </div>
+                <div id="JQuery-bar"></div>
+                <img class ="JQuery-image" src="http://precision-software.com/wp-content/uploads/2014/04/jQurery.gif" alt="jQuery Logo">
+
+            </div>
+
+            <div id="graph-bar-container">
+                <div id="graph-bar-text">
+                    SQL
+                </div>
+                <div id="SQL-bar"></div>
+                <img class ="SQL-image" src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="SQL Logo">
+            </div>
+
+        </div>
+
+    </section>
+    <section id="projects">
+
+    </section>
+    <section id="resume">
+
+    </section>
+    <section id="contact">
+
+    </section>
+
+    <!-- NavBarColorChange must run at the end of HTML-->
+    <script src="NavBarColorChangeAndGraphAnimation.js"></script>
+</body>
 

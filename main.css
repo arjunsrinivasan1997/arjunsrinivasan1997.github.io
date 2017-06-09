@@ -1,37 +1,246 @@
+
 #header-container{
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/66/UC-Berkeley-006-VLSB-downtown-Berkeley.jpg);
     background-size:  100%;
     height:800px;
     padding:0px;
+    background-repeat:no-repeat;
 }
 header {
     position: fixed;
     top:0;
     width: 100%;
-    height: 30px;
+    height: 35px;
+    padding-bottom:5px
 }
 #nav-bar-link{
-    top:5px;
-    padding-top: 10px;
-    padding-left:10px;
-    padding-right: 10px;
-    color:yellow;
-    size:30px;
+    padding:10px;
+    color:lightblue;
+    font-size:21px;
 }
+
 #nav-bar-link:hover{
     color:blue;
 }
 
-#about-me{
-    vertical-align: middle;
-    background-color: grey;
-    height:1000px;
+#name{
+    padding-top:250px;
+    font-size:65px;
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
+
+#spacer{
+    width:150px;
+}
+
+#other-info{
+    font-size:25px;
+}
+#about-me{
+    height:1000px;
+    background-color:black;
+}
+
 #skills{
     vertical-align: middle;
-    background-color: black;
-    height: 1000px;
+    background-color: grey;
+    height:1500px;
 }
+#graph-container {
+    padding-top: 100px;
+    position: relative;
+    left: 200px;
+    font-size: 30px;
+    color: white;
+    width:50px;
+}
+#graph-bar-container{
+ }
+#graph-bar-text{
+
+}
+
+
+
+.graph-bar{
+    padding: 30px;
+    width:150px;
+    height:20px;
+
+}
+.java-image {
+    width: 35px;
+    height: 35px;
+    display:inline-block;
+    position:absolute;
+    left:0px;
+    top:136px;
+    background-color: white;
+}
+
+#java-bar{
+    height: 35px;
+    display:inline-block;
+}
+
+.python-image {
+    width: 35px;
+    height: 35px;
+    display:inline-block;
+    position:absolute;
+    left:0px;
+    top:207px;
+}
+
+#python-bar{
+    height: 35px;
+    display:inline-block;
+}
+
+.VBA-image {
+    width: 35px;
+    height: 35px;
+    display:inline-block;
+    position:absolute;
+    left:0px;
+    top:278px;
+}
+
+#VBA-bar{
+    height: 35px;
+    display:inline-block;
+}
+.HTML5-image {
+    width: 35px;
+    height: 35px;
+    display:inline-block;
+    position:absolute;
+    left:0px;
+    top:349px;
+}
+
+#HTML5-bar{
+    height: 35px;
+    display:inline-block;
+}
+
+.CSS3-image {
+    width: 35px;
+    height: 35px;
+    display:inline-block;
+    position:absolute;
+    left:0px;
+    top:420px;
+}
+
+#CSS3-bar{
+    height: 35px;
+    display:inline-block;
+}
+
+.JavaScript-image {
+    width: 35px;
+    height: 35px;
+    display:inline-block;
+    position:absolute;
+    left:0px;
+    top:491px;
+}
+
+#JavaScript-bar{
+    height: 35px;
+    display:inline-block;
+}
+
+.JQuery-image {
+    width: 35px;
+    height: 35px;
+    display:inline-block;
+    position:absolute;
+    left:0px;
+    top:562px;
+}
+
+#JQuery-bar{
+    height: 35px;
+    display:inline-block;
+}
+
+.SQL-image {
+    width: 35px;
+    height: 35px;
+    display:inline-block;
+    position:absolute;
+    left:0px;
+    top:633px;
+}
+
+#SQL-bar{
+    height: 35px;
+    display:inline-block;
+}
+
+
+
+
+
+
+@-webkit-keyframes fullAnimation {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width:960px;
+    }
+}
+
+@-webkit-keyframes fullAnimationPicture {
+    0%{
+        left:0px;
+    }
+    100%{
+        left:960px;
+    }
+}
+
+@-webkit-keyframes threeQuarterAnimation {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 720px;
+    }
+}
+
+@-webkit-keyframes threeQuarterAnimationPicture {
+    0%{
+        left:0px;
+    }
+    100% {
+        left:720px;
+    }
+
+}
+
+@-webkit-keyframes sixtyPercentAnimation {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 600px;
+    }
+}
+@-webkit-keyframes sixtyPercentAnimationPicture {
+    0%{
+        left:0px;
+    }
+    100%{
+        left:600px;
+    }
+
+}
+
+
 
 
 
