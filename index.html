@@ -1,10 +1,10 @@
 <!--suppress ALL -->
 <head>
     <link rel="stylesheet" type="text/css" href="main.css">
-    <!-- JQuery Scripts for NavBarColorChangeAndGraphAnimation.js. Using Google JQuery-->
+    <!-- JQuery Package for NavBarColorChangeAndGraphAnimation.js. Using Google Hosted JQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
-<body margin="0px">
+<body >
     <section id="header">
         <div id="header-container">
             <header id="nav-bar" align="center">
@@ -27,13 +27,15 @@
                 <br>
                 Expected Graduation:Spring 2020
             </div>
-
         </div>
     </section>
     <section id="about-me">
 
     </section>
     <section id="skills">
+        <div id="title-text">
+            Skills
+        </div>
         <div id="graph-container">
             <div id="graph-bar-container">
                 <div id="graph-bar-text">
@@ -99,7 +101,76 @@
 
     </section>
     <section id="projects">
+        <div id="row-container" align="center">
+            <div class="project-box" id="databases">
+                <div class="button-text" id="databases-text-container">
+                    <div class="project-text"> Databases</div>
+                </div>
+            </div>
+            <div class="project-box" id="bearmaps">
+                <div class="button-text" id="bearmaps-text-container">
+                    <div class="project-text">BearMaps</div>
+                </div>
+            </div>
+            <div class="project-box" id="nbody">
+                <div class="button-text" id="nbody-text-container">
+                    <div class="project-text">NBody</div>
+                </div>
+            </div>
+            <div id="databasesModal" class="modal">
 
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span id="databasesClose" class="close">&times;</span>
+                    <div class="slideshow-container">
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 3</div>
+                            <img  class="slideshowImage" src="http://i.imgur.com/UWtMGUS.jpg" style="width:100%" >
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 3</div>
+                            <img class="slideshowImage" src="http://imgur.com/OLP41JP.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 3</div>
+                            <img class="slideshowImage" src="http://imgur.com/UvIb53s.jpg" style="width:100%">
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    </div>
+                    <br>
+
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="BearMapsModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span id="BearMapsClose" class="close">&times;</span>
+                    <p>bear maps modal text here</p>
+                </div>
+            </div>
+
+            <div id="NBodyModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span id="NBodyClose" class="close">&times;</span>
+                    <p>NBody modal text here</p>
+                </div>
+            </div>
+        </div>
     </section>
     <section id="resume">
 
@@ -108,7 +179,12 @@
 
     </section>
 
+
     <!-- NavBarColorChange must run at the end of HTML-->
     <script src="NavBarColorChangeAndGraphAnimation.js"></script>
+    <!-- Script to open modal boxes for project section-->
+    <script src="ModalBoxes.js"></script>
+    <!-- Script that runs image slideshow -->
+    <script src="imageSlideShow.js"></script>
 </body>
 
