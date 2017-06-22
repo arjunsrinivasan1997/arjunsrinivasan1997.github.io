@@ -9,7 +9,7 @@ var animated = false;
 $(document).scroll(function() {
     //console.log($(document).scrollTop());
     // change color of nav bar
-    $('#nav-bar').css('z-index', '5');
+
     if ($(document).scrollTop() >= top1 && $(document).scrollTop() < top2) {
         $('#nav-bar').css('background-color', '');
     } else if($(document).scrollTop() >= top2 ) {
@@ -67,5 +67,8 @@ $(document).scroll(function() {
         $('#SQL-bar').css('animation-fill-mode', 'forwards');
         $('.SQL-image').css('animation', 'sixtyPercentAnimationPicture 3.5s');
         $('.SQL-image').css('animation-fill-mode', 'forwards');
+
+        $('#nav-bar').css('z-index', '5');
+
     }
 });
