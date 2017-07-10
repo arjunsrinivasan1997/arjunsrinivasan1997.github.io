@@ -2,326 +2,410 @@ html, body {
     margin: 0;
     height: 100%;
 }
-#header-container{
+
+#header-container {
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/66/UC-Berkeley-006-VLSB-downtown-Berkeley.jpg);
-    background-size:  100%;
-    height:800px;
-    padding:0px;
-    background-repeat:no-repeat;
+    background-size: 110%;
+    height: 100%;
+    padding: 0;
+    background-repeat: no-repeat;
 }
+
 header {
     position: fixed;
-    top:0;
+    top: 0;
     width: 100%;
-    height: 35px;
-    padding-bottom:5px
+    height: 4%;
+    margin:0;
+    padding:0;
 }
-
-#nav-bar-link{
-    padding:10px;
-    color:lightblue;
-    font-size:21px;
-}
-
-#nav-bar-link:hover{
-    color:blue;
-}
-#title-text{
+#nav-bar{
     text-align:center;
-    color:white;
-    padding-top:40px;
-    padding-bottom:0px;
-    margin-bottom:0px;
+}
+
+.nav-bar-link {
+    padding: 10px;
+    color: black;
+    font-size: 21px;
+}
+
+.nav-bar-link:hover {
+    color: blue;
+}
+
+#title-text {
+    text-align: center;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-size: 30px;
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+#name {
+    padding-top: 250px;
+    font-size: 65px;
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+#spacer {
+    width: 150px;
+}
+
+#other-info {
+    font-size: 25px;
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+#about-me {
+    padding:0;
+    margin:0;
+    height: 100%;
+    background-color: lightblue;
+}
+#image-container{
+    height:60%;
+    width:14.5%;
+    position: absolute;
+    top:120%;
+    left:18%;
+    background-color:white;
+}
+#myPicture{
+    width:95.7%;
+    height:97.5%;
+    position: absolute;
+    top:5px;
+    left:5px;
+}
+#about-me-title{
+    color:black;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-size: 30px;
+    font-family:Impact, Charcoal, sans-serif; ;
+}
+
+.about-me-text{
+    position:relative;
+
     font-size:30px;
-
+    font-family: "Lucida Console", Monaco, monospace
 }
-
-#name{
-    padding-top:250px;
-    font-size:65px;
-    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+#ab1{
+    top:15%;
+    left:35%;
 }
-
-#spacer{
-    width:150px;
+#ab2{
+    top:25%;
+    left:35%;
 }
-
-#other-info{
-    font-size:25px;
-}
-#about-me{
-    height:1000px;
-    background-color:black;
-}
-
-#skills{
+#skills {
     vertical-align: middle;
     background-color: grey;
-    height:800px;
+    height: 800px;
 }
+
 #graph-container {
     padding-top: 20px;
     position: relative;
     left: 200px;
     font-size: 30px;
     color: white;
-    width:50px;
+    width: 50px;
 }
-#graph-bar-container{
-    margin-top:0px;
-    padding-top:0px;
 
- }
-#graph-bar-text{
-    font-size:25px;
+#graph-bar-container {
+    margin-top: 0px;
+    padding-top: 0px;
 
 }
 
+#graph-bar-text {
+    font-size: 25px;
+    font-family: 'Acme';
 
+}
 
-.graph-bar{
+.graph-bar {
     padding: 30px;
-    width:150px;
-    height:20px;
+    width: 150px;
+    height: 20px;
 
 }
+
 .java-image {
     width: 35px;
     height: 35px;
-    display:inline-block;
-    position:absolute;
-    left:0px;
-    top:49px;
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    top: 49px;
     background-color: white;
 }
 
-#java-bar{
+#java-bar {
     height: 35px;
-    display:inline-block;
+    display: inline-block;
+}
+#background-container{
+    height: 35px;
+    width:992px;
+    background-color: rgb(51,102,153);
 }
 
 .python-image {
     width: 35px;
     height: 35px;
-    display:inline-block;
-    position:absolute;
-    left:0px;
-    top:113px;
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    top: 113px;
     background-color: white;
 }
 
-#python-bar{
+#python-bar {
     height: 35px;
-    display:inline-block;
+    display: inline-block;
 }
 
 .VBA-image {
     width: 35px;
     height: 35px;
-    display:inline-block;
-    position:absolute;
-    left:0px;
-    top:176px;
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    top: 177px;
     background-color: white;
 
 }
 
-#VBA-bar{
+#VBA-bar {
     height: 35px;
-    display:inline-block;
+    display: inline-block;
 }
+
 .HTML5-image {
     width: 35px;
     height: 35px;
-    display:inline-block;
-    position:absolute;
-    left:0px;
-    top:241px;
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    top: 241px;
     background-color: white;
 
 }
 
-#HTML5-bar{
+#HTML5-bar {
     height: 35px;
-    display:inline-block;
+    display: inline-block;
 }
 
 .CSS3-image {
     width: 35px;
     height: 35px;
-    display:inline-block;
-    position:absolute;
-    left:0px;
-    top:305px;
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    top: 305px;
     background-color: white;
 
 }
 
-#CSS3-bar{
+#CSS3-bar {
     height: 35px;
-    display:inline-block;
+    display: inline-block;
 }
 
 .JavaScript-image {
     width: 35px;
     height: 35px;
-    display:inline-block;
-    position:absolute;
-    left:0px;
-    top:369px;
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    top: 369px;
     background-color: white;
 
 }
 
-#JavaScript-bar{
+#JavaScript-bar {
     height: 35px;
-    display:inline-block;
+    display: inline-block;
 }
 
 .JQuery-image {
     width: 35px;
     height: 35px;
-    display:inline-block;
-    position:absolute;
-    left:0px;
-    top:433px;
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    top: 433px;
     background-color: white;
 
 }
 
-#JQuery-bar{
+#JQuery-bar {
     height: 35px;
-    display:inline-block;
+    display: inline-block;
 }
 
 .SQL-image {
     width: 35px;
     height: 35px;
-    display:inline-block;
-    position:absolute;
-    left:0px;
-    top:497px;
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    top: 497px;
     background-color: white;
 }
 
-#SQL-bar{
+#SQL-bar {
     height: 35px;
-    display:inline-block;
+    display: inline-block;
 }
-#projects{
-    height:1000px;
+
+#projects {
+    height: 1000px;
     background-color: white;
 }
-#row-container{
-    padding-top:20px;
-    padding-bottom:20px;
-    text-align:center;
+
+#row-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
 }
-.project-box{
-    border:black;
-    border:solid;
-    width:350px;
-    height:250px;
-    margin-left:20px;
-    margin-right:20px;
-    display:inline-block;
+
+.project-box {
+    border: black;
+    border: solid;
+    width: 350px;
+    height: 250px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
 }
-#databases{
+
+#databases {
     background-image: url(http://i.imgur.com/UWtMGUS.jpg);
-    background-size:350px 250px;
-}
-#bearmaps{
-    background-image:url(http://imgur.com/OLP41JP.jpg);
     background-size: 350px 250px;
 }
+
+#bearmaps {
+    background-image: url(http://imgur.com/OLP41JP.jpg);
+    background-size: 350px 250px;
+}
+
 #nbody {
     background-image: url(http://imgur.com/UvIb53s.jpg);
     background-size: 350px 250px;
 }
+
 /* TODO: add background images to these three project boxes */
-#scheme{
-    background-size:350px 250px;
-}
-#ants{
+#scheme {
+    background-image: url(https://inst.eecs.berkeley.edu/~cs61a/sp13/labs/lab09/lambda.svg);
     background-size: 350px 250px;
 }
-#maps{
+
+#Alexa {
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/kindle/merch/2016/ALEXA/CP/TEST/alexa-cp-echo.jpg);
     background-size: 350px 250px;
 }
+
+#yelp {
+    background-image:url(http://imgur.com/keuS6rH.jpg);
+    background-size: 350px 250px;
+}
+
 .button {
-    background:none;
-    border:none;
-    margin:0;
-    padding:0;
-    background-color:white;
-    font-size:30px;
-    position:relative;
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-size: 30px;
+    position: relative;
     top: 100px;
 }
-#databases:hover > #databases-text-container{
-    background-image:url(http://images.all-free-download.com/images/graphiclarge/nostalgic_blue_background_04_hd_pictures_169785.jpg);
-    background-size:350px 250px;
+
+#databases:hover > #databases-text-container {
+    background-image: url(http://images.all-free-download.com/images/graphiclarge/nostalgic_blue_background_04_hd_pictures_169785.jpg);
+    background-size: 350px 250px;
     visibility: visible;
 
 }
-#bearmaps:hover > #bearmaps-text-container{
-    background-image:url(http://images.all-free-download.com/images/graphiclarge/nostalgic_blue_background_04_hd_pictures_169785.jpg);
-    background-size:350px 250px;
-    visibility: visible;
-}
-#nbody:hover > #nbody-text-container{
-    background-image:url(http://images.all-free-download.com/images/graphiclarge/nostalgic_blue_background_04_hd_pictures_169785.jpg);
-    background-size:350px 250px;
-    visibility: visible;
-}
-#scheme:hover > #scheme-text-container{
-    background-image:url(http://images.all-free-download.com/images/graphiclarge/nostalgic_blue_background_04_hd_pictures_169785.jpg);
-    background-size:350px 250px;
+
+#bearmaps:hover > #bearmaps-text-container {
+    background-image: url(http://images.all-free-download.com/images/graphiclarge/nostalgic_blue_background_04_hd_pictures_169785.jpg);
+    background-size: 350px 250px;
     visibility: visible;
 }
 
-#ants:hover > #ants-text-container{
-    background-image:url(http://images.all-free-download.com/images/graphiclarge/nostalgic_blue_background_04_hd_pictures_169785.jpg);
-    background-size:350px 250px;
-    visibility: visible;
-}
-#maps:hover > #maps-text-container{
-    background-image:url(http://images.all-free-download.com/images/graphiclarge/nostalgic_blue_background_04_hd_pictures_169785.jpg);
-    background-size:350px 250px;
-    visibility: visible;
-}
-#yelp:hover > #yelp-text-container{
-    background-image:url(http://images.all-free-download.com/images/graphiclarge/nostalgic_blue_background_04_hd_pictures_169785.jpg);
-    background-size:350px 250px;
+#nbody:hover > #nbody-text-container {
+    background-image: url(http://images.all-free-download.com/images/graphiclarge/nostalgic_blue_background_04_hd_pictures_169785.jpg);
+    background-size: 350px 250px;
     visibility: visible;
 }
 
-.button-text{
-    height:250px;
-    width:350px;
+#scheme:hover > #scheme-text-container {
+    background-image: url(http://images.all-free-download.com/images/graphiclarge/nostalgic_blue_background_04_hd_pictures_169785.jpg);
+    background-size: 350px 250px;
+    visibility: visible;
 }
-#databases-text-container{
+
+#Alexa:hover > #Alexa-text-container {
+    background-image: url(http://images.all-free-download.com/images/graphiclarge/nostalgic_blue_background_04_hd_pictures_169785.jpg);
+    background-size: 350px 250px;
+    visibility: visible;
+}
+
+#maps:hover > #maps-text-container {
+    background-image: url(http://images.all-free-download.com/images/graphiclarge/nostalgic_blue_background_04_hd_pictures_169785.jpg);
+    background-size: 350px 250px;
+    visibility: visible;
+}
+
+#yelp:hover > #yelp-text-container {
+    background-image: url(http://images.all-free-download.com/images/graphiclarge/nostalgic_blue_background_04_hd_pictures_169785.jpg);
+    background-size: 350px 250px;
+    visibility: visible;
+}
+
+.button-text {
+    height: 250px;
+    width: 350px;
+}
+
+#databases-text-container {
     visibility: hidden;
 }
-#bearmaps-text-container{
+
+#bearmaps-text-container {
     visibility: hidden;
 }
-#nbody-text-container{
+
+#nbody-text-container {
     visibility: hidden;
 }
-#scheme-text-container{
+
+#scheme-text-container {
     visibility: hidden;
 }
-#ants-text-container{
+
+#Alexa-text-container {
     visibility: hidden;
 }
-#maps-text-container{
+
+#yelp-text-container {
     visibility: hidden;
 }
-.project-text{
-    position:relative;
-    top:110px;
-    color:white;
+
+.project-text {
+    position: relative;
+    top: 110px;
+    color: white;
     font-size: 25px;
 }
 
@@ -329,14 +413,14 @@ header {
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 100px;
+    padding-top: 50px;
     left: 0;
     top: 0;
     width: 100%;
-    height: 200%;
+    height: 100%;
     overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 /* Modal Content */
@@ -345,7 +429,7 @@ header {
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 90%;
 }
 
 /* The Close Button */
@@ -363,25 +447,34 @@ header {
     cursor: pointer;
 }
 
+.project-title-text {
+    font-size: 30px;
+    padding-top: 10px;
+    font-family:Impact, Charcoal, sans-serif;
+}
 
+.project-body-text {
+    font-size: 17px;
+    padding: 10px;
+}
 
 /* Animations for skills section */
 
 @-webkit-keyframes fullAnimation {
     0% {
-        width: 0px;
+        width: 0;
     }
     100% {
-        width:960px;
+        width: 960px;
     }
 }
 
 @-webkit-keyframes fullAnimationPicture {
-    0%{
-        left:0px;
+    0% {
+        left: 0;
     }
-    100%{
-        left:960px;
+    100% {
+        left: 960px;
     }
 }
 
@@ -390,16 +483,16 @@ header {
         width: 0px;
     }
     100% {
-        width: 720px;
+        width: 800px;
     }
 }
 
 @-webkit-keyframes threeQuarterAnimationPicture {
-    0%{
-        left:0px;
+    0% {
+        left: 0px;
     }
     100% {
-        left:720px;
+        left: 800px;
     }
 
 }
@@ -412,28 +505,48 @@ header {
         width: 600px;
     }
 }
+
 @-webkit-keyframes sixtyPercentAnimationPicture {
-    0%{
-        left:0px;
+    0% {
+        left: 0px;
     }
-    100%{
-        left:600px;
+    100% {
+        left: 600px;
     }
 
 }
 
-.mySlides {display:none}
+.mySlidesdb {
+    display: none
+}
 
-/* Slideshow container */
+.mySlidesbm {
+    display: none
+}
+
+.mySlidesnb {
+    display: none
+}
+.mySlidesym{
+    display:none
+}
+.mySlidesAlexa{
+    display:none;
+}
+.mySlidessc{
+    display:none;
+}
+
 .slideshow-container {
     max-width: 1000px;
     position: relative;
     margin: auto;
 }
-.slideshowImage{
-    height:550px;
+
+.slideshowImage {
+    height: 450px;
 }
-/* Next & previous buttons */
+
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -449,21 +562,19 @@ header {
     background-color: grey;
 }
 
-/* Position the "next button" to the right */
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
-.prev{
-    left:0px;
+
+.prev {
+    left: 0px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Caption text */
 .text {
     color: #000000;
     font-size: 15px;
@@ -474,19 +585,70 @@ header {
     text-align: center;
 }
 
-/* Number text (1/3 etc) */
 .numbertext {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
-    background-color:black;
+    background-color: black;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-    cursor:pointer;
+.dotdb {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dotbm {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dotnb {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.dotym{
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+
+}
+.dotAlexa{
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.dotsc{
+    cursor: pointer;
     height: 13px;
     width: 13px;
     margin: 0 2px;
@@ -500,7 +662,6 @@ header {
     background-color: #717171;
 }
 
-/* Fading animation */
 .fade {
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
@@ -508,18 +669,27 @@ header {
 }
 
 @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
 }
 
 @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
 }
 
-/* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-    .prev, .next,.text {font-size: 11px}
+    .prev, .next, .text {
+        font-size: 11px
+    }
 }
 
 

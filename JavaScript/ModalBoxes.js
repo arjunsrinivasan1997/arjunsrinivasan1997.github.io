@@ -6,21 +6,21 @@ var databasesModal = document.getElementById('databasesModal');
 var bearMapsModal = document.getElementById('BearMapsModal');
 var nbodyModal = document.getElementById('NBodyModal');
 var schemeModal = document.getElementById('SchemeModal');
-var antsModal = document.getElementById('AntsModal');
+var alexaModal = document.getElementById('AlexaModal');
 var yelpModal = document.getElementById('YelpMapsModal');
 
 var databasesButton = document.getElementById("databases");
 var bearMapsButton = document.getElementById("bearmaps");
 var nbodyButton = document.getElementById("nbody");
 var schemeButton = document.getElementById("scheme");
-var antsButton = document.getElementById("ants");
+var alexaButton = document.getElementById("Alexa");
 var yelpButton = document.getElementById("yelp");
 
 var databasesSpan = document.getElementById("databasesClose");
 var bearMapsSpan = document.getElementById("BearMapsClose");
 var nbodySpan = document.getElementById("NBodyClose");
 var schemeSpan = document.getElementById("SchemeClose");
-var antsSpan = document.getElementById("AntsClose");
+var alexaSpan = document.getElementById("AlexaClose");
 var yelpSpan =document.getElementById("YelpClose");
 // Activating the button onclick functions
 databasesButton.onclick = function() {
@@ -35,8 +35,8 @@ nbodyButton.onclick = function () {
 schemeButton.onclick = function () {
     schemeModal.style.display = "block";
 };
-antsButton.onclick = function () {
-    antsModal.style.display ="block";
+alexaButton.onclick = function () {
+    alexaModal.style.display ="block";
 };
 yelpButton.onclick = function () {
     yelpModal.style.display ="block";
@@ -54,8 +54,8 @@ nbodySpan.onclick = function () {
 schemeSpan.onclick = function () {
     schemeModal.style.display = "none";
 };
-antsSpan.onclick = function () {
-    antsModal.style.display = "none";
+alexaSpan.onclick = function () {
+    alexaModal.style.display = "none";
 };
 yelpSpan.onclick = function () {
     yelpModal.style.display = "none";
@@ -70,9 +70,9 @@ window.onclick = function(event) {
         nbodyModal.style.display = "none"
     } else if (event.target == schemeModal) {
         schemeModal.style.display = "none"
-    } else if (event.target == antsModal) {
-        antsModal.style.display = "none"
-    } else if (event.target.display == yelpModal) {
+    } else if (event.target == alexaModal) {
+        alexaModal.style.display = "none"
+    } else if (event.target == yelpModal) {
         yelpModal.style.display = "none"
     }
 };
