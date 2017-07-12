@@ -40,7 +40,6 @@ $(document).scroll(function() {
         animated = true;
         var javaBar = $( '#java-bar' );
         var javaImage = $('.java-image');
-        javaBar.css('text-align', 'right');
         javaBar.css('background-color', '#000');
         javaBar.css('animation', 'fullAnimation 3.5s');
         javaBar.css('animation-fill-mode', 'forwards');

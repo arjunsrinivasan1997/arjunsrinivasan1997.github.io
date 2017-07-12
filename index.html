@@ -1,10 +1,16 @@
-<!--suppress ALL -->
+
 <head>
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <!-- Google Fonts Package.-->
-    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <!-- Google Fonts.-->
+    <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Carter One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Amarante' rel='stylesheet'>
     <!-- JQuery Package.  Using Google Hosted JQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <script>
 
@@ -59,11 +65,11 @@
             Skills
         </div>
     <div id="graph-container">
-        <div id="graph-bar-container">
-            <div id="graph-bar-text">
+        <div id="graph-bar-container" >
+            <div id="graph-bar-text" >
                         Java
             </div>
-            <div id="background-container">
+            <div id="background-container" >
                 <div id="java-bar"></div>
                 <img class="java-image" src="http://xahlee.info/UnixResource_dir/gki/Java_logo_new.svg" alt="Java Logo">
             </div>
@@ -146,7 +152,7 @@
 </section>
 <section id="projects">
     <div id="title-text" style="color:black">Projects</div>
-    <div id="row-container" align="center">
+    <div class="row-container" align="center">
         <div class="project-box" id="databases">
             <div class="button-text" id="databases-text-container">
                 <div class="project-text"> Databases</div>
@@ -285,7 +291,7 @@
             </div>
         </div>
     </div>
-    <div id="row-container" align="center">
+    <div class="row-container" align="center">
         <div class="project-box" id="scheme">
             <div class="button-text" id="scheme-text-container">
                 <div class="project-text"> Scheme</div>
@@ -348,7 +354,7 @@
                 <h1 class="project-title-text"> Tampa Bay Sports Trivia (JavaScript & Alexa Skills Kit)
                 </h1>
                 <p class ="project-body-text">
-                    Built a trivia game for devices that support Amazon Alexa that asks the user questions, waits for an answer and then determines if they gave the correct answer. Had over 680 unique users as of 7/9/17
+                    Built a trivia game for devices that support Amazon Alexa that asks the user questions, waits for an answer and then determines if they gave the correct answer. Currently, more than 700 people use this skill.
                 </p>
                 <div class="slideshow-container">
 
@@ -414,8 +420,25 @@
 </section>
 
 <section id="contact">
-
+    <div id="title-text"  style="color:rgb(255,255,192)">Contact</div>
+    <div id="contact-text" align="center" style="color:white"> If you have any questions, about my skills or my projects, please don't hesitate to reach out to me.</div>
+    <div class="image-text-container" id="phone">
+        <img class="contact-image" src="Images/Contact/Phone.png">
+        <div class="contact-info" id="phone-text" >727-252-4303</div>
+    </div>
+    <div class="image-text-container" id="email">
+        <img class="contact-image" src="Images/Contact/Email.png">
+        <a class="contact-info" id="email-text" href="mailto:arjunsrinivasan1997@gmail.com" >arjunsrinivasan1997@gmail.com</a>
+    </div>
+    <div class="image-text-container" id="github">
+        <a  id="github-button" href="https://github.com/arjunsrinivasan1997/Personal-Projects" target="_blank"></a>
+    </div>
+    <div class="image-text-container" id="facebook">
+        <a id="facebook-button" href="https://google.com"></a>
+    </div>
 </section>
+
+
 
 <!-- Script responsible for smooth scrolling animation -->
 <script src="JavaScript/SmoothScroll.js"></script>

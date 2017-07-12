@@ -1,6 +1,8 @@
 html, body {
-    margin: 0;
+    width: 100%;
     height: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 
 #header-container {
@@ -13,20 +15,26 @@ html, body {
 
 header {
     position: fixed;
-    top: 0;
+    top:0;
     width: 100%;
     height: 4%;
     margin:0;
     padding:0;
-}
-#nav-bar{
     text-align:center;
+
 }
 
+
+
+
 .nav-bar-link {
-    padding: 10px;
+    position:relative;
+    top:5px;
+    margin:5px;
+    padding:10px;
     color: black;
     font-size: 21px;
+    font-family: 'Aldrich';
 }
 
 .nav-bar-link:hover {
@@ -40,7 +48,7 @@ header {
     padding-bottom: 0px;
     margin-bottom: 0px;
     font-size: 30px;
-    font-family: Impact, Charcoal, sans-serif;
+    font-family: 'Carter One',sans-serif;
 }
 
 #name {
@@ -79,19 +87,19 @@ header {
     top:5px;
     left:5px;
 }
-#about-me-title{
-    color:black;
+#about-me-title {
+    color: black;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 0px;
     margin-bottom: 0px;
     font-size: 30px;
-    font-family:Impact, Charcoal, sans-serif; ;
+    font-family: 'Carter One', sans-serif;
 }
 
 .about-me-text{
     position:relative;
-
+    width:937px;
     font-size:30px;
     font-family: "Lucida Console", Monaco, monospace
 }
@@ -126,7 +134,7 @@ header {
 
 #graph-bar-text {
     font-size: 25px;
-    font-family: 'Acme';
+    font-family: 'Allerta Stencil', serif;
 
 }
 
@@ -143,7 +151,7 @@ header {
     display: inline-block;
     position: absolute;
     left: 0px;
-    top: 49px;
+    top: 52px;
     background-color: white;
 }
 
@@ -153,7 +161,7 @@ header {
 }
 #background-container{
     height: 35px;
-    width:992px;
+    width:999px;
     background-color: rgb(51,102,153);
 }
 
@@ -163,7 +171,7 @@ header {
     display: inline-block;
     position: absolute;
     left: 0px;
-    top: 113px;
+    top: 119px;
     background-color: white;
 }
 
@@ -178,7 +186,7 @@ header {
     display: inline-block;
     position: absolute;
     left: 0px;
-    top: 177px;
+    top: 186px;
     background-color: white;
 
 }
@@ -194,7 +202,7 @@ header {
     display: inline-block;
     position: absolute;
     left: 0px;
-    top: 241px;
+    top: 253px;
     background-color: white;
 
 }
@@ -210,7 +218,7 @@ header {
     display: inline-block;
     position: absolute;
     left: 0px;
-    top: 305px;
+    top: 320px;
     background-color: white;
 
 }
@@ -226,7 +234,7 @@ header {
     display: inline-block;
     position: absolute;
     left: 0px;
-    top: 369px;
+    top: 387px;
     background-color: white;
 
 }
@@ -242,7 +250,7 @@ header {
     display: inline-block;
     position: absolute;
     left: 0px;
-    top: 433px;
+    top: 454px;
     background-color: white;
 
 }
@@ -258,7 +266,7 @@ header {
     display: inline-block;
     position: absolute;
     left: 0px;
-    top: 497px;
+    top: 521px;
     background-color: white;
 }
 
@@ -268,11 +276,11 @@ header {
 }
 
 #projects {
-    height: 1000px;
+    height: 850px;
     background-color: white;
 }
 
-#row-container {
+.row-container {
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
@@ -376,6 +384,7 @@ header {
 .button-text {
     height: 250px;
     width: 350px;
+    font-family: 'Sofia';
 }
 
 #databases-text-container {
@@ -407,6 +416,7 @@ header {
     top: 110px;
     color: white;
     font-size: 25px;
+    font-family:'Amaranth',sans-serif;
 }
 
 .modal {
@@ -454,6 +464,7 @@ header {
 }
 
 .project-body-text {
+    font-family: 'Play', sans-serif;
     font-size: 17px;
     padding: 10px;
 }
@@ -691,10 +702,111 @@ header {
         font-size: 11px
     }
 }
+#contact{
+    vertical-align: middle;
+    background-color: black;
+    height: 1000px;
+}
+.image-text-container{
+    position:relative;
+    display:inline;
+}
+
+.contact-image{
+    width:100px;
+    height:100px;
+    display:inline-block;
 
 
+}
+#contact-text{
+    font-size:25px;
+    position:relative;
+    font-family:'Amarante',sans-serif;
 
+}
+.contact-info{
+    color:white;
+    display:inline-block;
+    position:relative;
+    top:-50px;
+    left:75px;
+    font-size:20px;
+    text-align:center;
+}
 
+#phone{
+    top:100px;
+    left:550px;
+}
+#email{
+    top:200px;
+    left:329px;
+}
+
+#phone-text{
+    position:relative;
+    left:150px;
+}
+#email-text{
+    color:rgb(0, 128, 192);
+}
+#github{
+    top:230px;
+    left:670px;
+}
+#facebook{
+    top:250px;
+    left:670px;
+}
+
+#github-button{
+    background-image: url(https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png);
+    width:100px;
+    height:100px;
+    max-width:100px;
+    background-size: 143px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    background-clip: border-box;
+    transition: background-size 0.2s;
+    transition-timing-function: cubic-bezier(.07,1.41,.82,1.41);
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space:nowrap;
+}
+#github-button:hover{
+    background-size: 160px;
+}
+#facebook-button{
+    padding:0;
+    margin:0;
+    background-image: url(https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_color-256.png);
+    width:100px;
+    height:100px;
+    background-size: 143px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    background-clip: border-box;
+    transition: background-size 0.2s;
+    transition-timing-function: cubic-bezier(.07,1.41,.82,1.41);
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space:nowrap;
+    background-color:white;
+
+}
+#facebook-button:hover {
+    background-size: 160px;
+}
 
 
 
