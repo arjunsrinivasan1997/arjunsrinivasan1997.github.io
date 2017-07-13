@@ -156,10 +156,12 @@ header {
 }
 
 #java-bar {
+    border-radius: 25px;
     height: 35px;
     display: inline-block;
 }
 #background-container{
+    border-radius: 25px;
     height: 35px;
     width:999px;
     background-color: rgb(51,102,153);
@@ -176,6 +178,8 @@ header {
 }
 
 #python-bar {
+    border-radius: 25px;
+
     height: 35px;
     display: inline-block;
 }
@@ -192,6 +196,7 @@ header {
 }
 
 #VBA-bar {
+    border-radius: 25px;
     height: 35px;
     display: inline-block;
 }
@@ -208,6 +213,8 @@ header {
 }
 
 #HTML5-bar {
+    border-radius: 25px;
+
     height: 35px;
     display: inline-block;
 }
@@ -224,6 +231,8 @@ header {
 }
 
 #CSS3-bar {
+    border-radius: 25px;
+
     height: 35px;
     display: inline-block;
 }
@@ -241,6 +250,7 @@ header {
 
 #JavaScript-bar {
     height: 35px;
+    border-radius: 25px;
     display: inline-block;
 }
 
@@ -256,6 +266,7 @@ header {
 }
 
 #JQuery-bar {
+    border-radius: 25px;
     height: 35px;
     display: inline-block;
 }
@@ -271,6 +282,7 @@ header {
 }
 
 #SQL-bar {
+    border-radius: 25px;
     height: 35px;
     display: inline-block;
 }
@@ -476,7 +488,7 @@ header {
         width: 0;
     }
     100% {
-        width: 960px;
+        width: 999px;
     }
 }
 
@@ -494,7 +506,7 @@ header {
         width: 0px;
     }
     100% {
-        width: 800px;
+        width: 830px;
     }
 }
 
@@ -513,7 +525,7 @@ header {
         width: 0px;
     }
     100% {
-        width: 600px;
+        width: 750px;
     }
 }
 
@@ -710,6 +722,8 @@ header {
 .image-text-container{
     position:relative;
     display:inline;
+    max-width:100px;
+    max-height:100px;
 }
 
 .contact-image{
@@ -752,32 +766,30 @@ header {
     color:rgb(0, 128, 192);
 }
 #github{
-    top:230px;
-    left:670px;
+    top:350px;
+    left:100px;
 }
 #facebook{
-    top:250px;
-    left:670px;
+    top:475px;
+    left:-2px;
 }
 
 #github-button{
     background-image: url(https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png);
     width:100px;
     height:100px;
-    max-width:100px;
     background-size: 143px;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 50%;
     background-clip: border-box;
+    border-right:none;
     transition: background-size 0.2s;
     transition-timing-function: cubic-bezier(.07,1.41,.82,1.41);
-    display: block;
+    display: inline-block;
     text-decoration: none;
     cursor: pointer;
-    overflow: hidden;
-    text-indent: 100%;
-    white-space:nowrap;
+
 }
 #github-button:hover{
     background-size: 160px;
@@ -795,7 +807,7 @@ header {
     background-clip: border-box;
     transition: background-size 0.2s;
     transition-timing-function: cubic-bezier(.07,1.41,.82,1.41);
-    display: block;
+    display: inline-block;
     text-decoration: none;
     cursor: pointer;
     overflow: hidden;
