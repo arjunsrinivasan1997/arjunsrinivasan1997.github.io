@@ -33,8 +33,8 @@ header {
     margin:5px;
     padding:10px;
     color: black;
-    font-size: 21px;
-    font-family: 'Aldrich';
+    font-size: 1.5vw;
+    font-family: 'Aldrich', sans-serif;
 }
 
 .nav-bar-link:hover {
@@ -84,7 +84,7 @@ header {
     height:50vh;
     width:15vw;
     position: relative;
-    left:25vw;
+    left:20vw;
     bottom:20vh;
     background-color:white;
     margin:0px;
@@ -104,7 +104,7 @@ header {
     padding-top: 10px;
     padding-bottom: 0px;
     margin-bottom: 0px;
-    font-size: 30px;
+    font-size: 4vh;
     font-family: 'Carter One', sans-serif;
 }
 
@@ -113,18 +113,18 @@ header {
     position:relative;
     height:auto;
     width: 50vw;
-    font-size:3vh;
+    font-size:1.7vw;
     font-family: "Lucida Console", Monaco, monospace
 }
 #ab1{
     position:relative;
-    top:12vh;
-    left:47%;
+    top:10vh;
+    left:37vw;
 }
 #ab2{
     position:relative;
-    top:22vh;
-    left:47%;
+    top:20vh;
+    left:37vw;
 }
 #skills {
     vertical-align: middle;
@@ -506,7 +506,7 @@ header {
         width: 0;
     }
     100% {
-        width: 999px;
+        width: 50vw;
     }
 }
 
