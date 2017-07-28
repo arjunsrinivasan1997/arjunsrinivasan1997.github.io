@@ -1,4 +1,5 @@
 
+
 <head>
     <!-- Google Fonts.-->
     <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
@@ -11,6 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <!-- Main stylesheet -->
     <link rel="stylesheet" type="text/css" href="main.css">
+    <meta name="viewport" content="initial-scale=1">
 </head>
 <script>
 
@@ -18,7 +20,7 @@
 <body>
 <section id="header">
     <div id="header-container">
-        <header id="nav-bar" >
+        <header id="nav-bar" align="center" >
             <nav>
                 <a id ="about-link" class="nav-bar-link" href="#about-me">About Me</a>
                 <a id ="skills-link" class="nav-bar-link" href="#skills">Skills</a>
@@ -40,6 +42,7 @@
 </section>
 <section id="about-me">
     <div id="about-me-title">About Me</div>
+
     <div class="about-me-text" id="ab1">
         Hello! I'm Arjun Srinivasan, and I am a second
         <br>
@@ -49,14 +52,15 @@
     </div>
     <div class="about-me-text" id="ab2">
         I enjoy developing front end and back end programs.
-        <br>
+
          I am also  extremely interested in Machine Learning,
-        <br>
+
         Computer Graphics, and Data Science
     </div>
     <div id="image-container" >
         <img id="myPicture" src="Images/myself.jpg" align="center">
     </div>
+
 
 
 </section>
@@ -411,7 +415,7 @@
     <div id="contact-text" align="center" style="color:white"> If you have any questions, about my skills or my projects, please don't hesitate to reach out to me.</div>
     <div class="image-text-container" id="phone">
         <img class="contact-image" src="Images/Contact/Phone.png">
-        <div class="contact-info" id="phone-text" >727-252-4303</div>
+        <a href="tel:7272524303" class="contact-info" id="phone-text">727-252-4303</a>
     </div>
     <div class="image-text-container" id="email">
         <img class="contact-image" src="Images/Contact/Email.png">

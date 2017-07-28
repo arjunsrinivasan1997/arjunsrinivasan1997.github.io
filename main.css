@@ -7,8 +7,8 @@ html, body {
 
 #header-container {
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/66/UC-Berkeley-006-VLSB-downtown-Berkeley.jpg);
-    background-size: 110%;
-    height: 100%;
+    background-size: 100% 100%;
+    height: 100vh;
     padding: 0;
     background-repeat: no-repeat;
 }
@@ -52,40 +52,51 @@ header {
 }
 
 #name {
-    padding-top: 250px;
-    font-size: 65px;
+    position:relative;
+    top:25vh;
+    font-size:5vw;
     font-family: Impact, Charcoal, sans-serif;
 }
 
 #spacer {
+    position:relative;
+    top:27.5vh;
     width: 150px;
 }
 
 #other-info {
-    font-size: 25px;
+    position:relative;
+    top:30vh;
+    font-size: 3vh;
     font-family: Impact, Charcoal, sans-serif;
+    padding-bottom:200px;
 }
 
 #about-me {
     padding:0;
     margin:0;
     height: 100%;
+    width:100%;
     background-color: lightblue;
+    display: inline-block;
 }
 #image-container{
-    height:60%;
-    width:14.5%;
-    position: absolute;
-    top:120%;
-    left:18%;
+    height:50vh;
+    width:15vw;
+    position: relative;
+    left:25vw;
+    bottom:20vh;
     background-color:white;
+    margin:0px;
+    padding:0px;
+
 }
 #myPicture{
     width:95.7%;
     height:97.5%;
-    position: absolute;
-    top:5px;
-    left:5px;
+    position: relative;
+    top:1%;
+    left:3%;
 }
 #about-me-title {
     color: black;
@@ -98,23 +109,28 @@ header {
 }
 
 .about-me-text{
+    left:10vw;
     position:relative;
-    width:937px;
-    font-size:30px;
+    height:auto;
+    width: 50vw;
+    font-size:3vh;
     font-family: "Lucida Console", Monaco, monospace
 }
 #ab1{
-    top:15%;
-    left:35%;
+    position:relative;
+    top:12vh;
+    left:47%;
 }
 #ab2{
-    top:25%;
-    left:35%;
+    position:relative;
+    top:22vh;
+    left:47%;
 }
 #skills {
     vertical-align: middle;
     background-color: grey;
-    height: 800px;
+    height: 100%;
+    width: auto;
 }
 
 #graph-container {
@@ -127,6 +143,8 @@ header {
 }
 
 #graph-bar-container {
+    position:relative;
+    left: 10%;
     margin-top: 0px;
     padding-top: 0px;
 
@@ -759,19 +777,23 @@ header {
 }
 
 #phone-text{
+    color:rgb(0, 128, 192);
     position:relative;
     left:150px;
 }
+
 #email-text{
     color:rgb(0, 128, 192);
 }
 #github{
     top:350px;
     left:100px;
+    display:inline-block;
 }
 #facebook{
     top:475px;
     left:-2px;
+    display:inline-block;
 }
 
 #github-button{
