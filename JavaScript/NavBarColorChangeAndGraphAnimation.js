@@ -4,7 +4,13 @@ var top3 = $('#skills').offset().top;
 var top4 = $('#projects').offset().top;
 var top5 = $('#contact').offset().top;
 var animated = false;
-
+$(window).resize(function() {
+    top1 = $('#header').offset().top + 10;
+    top2 = $('#about-me').offset().top -200 ;
+    top3 = $('#skills').offset().top;
+    top4 = $('#projects').offset().top;
+    top5 = $('#contact').offset().top;
+});
 $(document).scroll(function() {
     $('#nav-bar').css('z-index', '5');
     //console.log($(document).scrollTop());

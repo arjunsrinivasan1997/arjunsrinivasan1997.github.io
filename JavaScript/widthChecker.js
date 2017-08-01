@@ -3,7 +3,6 @@
  */
 var width = $( window ).width();
 console.log(width);
-console.log($( window ).height());
 while (width != $( window ).width()) {
     width = $( window ).width();
     console.log(width);

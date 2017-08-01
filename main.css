@@ -29,12 +29,18 @@ header {
 
 .nav-bar-link {
     position:relative;
-    top:5px;
-    margin:5px;
-    padding:10px;
+    top:.5vw;
+    bottom:.5vw;
+    margin:0.5vh;
+    padding-left:1vw;
+    padding-right:1vw;
     color: black;
-    font-size: 1.5vw;
+    font-size: 2.5vh;
     font-family: 'Aldrich', sans-serif;
+}
+#nav-bar{
+    height:5vh;
+
 }
 
 .nav-bar-link:hover {
@@ -47,14 +53,14 @@ header {
     padding-top: 40px;
     padding-bottom: 0px;
     margin-bottom: 0px;
-    font-size: 30px;
+    font-size: 4vh;
     font-family: 'Carter One',sans-serif;
 }
 
 #name {
     position:relative;
     top:25vh;
-    font-size:5vw;
+    font-size:7vh;
     font-family: Impact, Charcoal, sans-serif;
 }
 
@@ -84,18 +90,19 @@ header {
     height:50vh;
     width:15vw;
     position: relative;
-    left:20vw;
-    bottom:20vh;
+    left:20%;
+    bottom:15%;
     background-color:white;
     margin:0px;
     padding:0px;
-
 }
+
 #myPicture{
-    width:95.7%;
-    height:97.5%;
+    width:95%;
+    height:95%;
+
     position: relative;
-    top:1%;
+    top:2%;
     left:3%;
 }
 #about-me-title {
@@ -109,8 +116,8 @@ header {
 }
 
 .about-me-text{
-    left:10vw;
     position:relative;
+    left:30vw;
     height:auto;
     width: 50vw;
     font-size:1.7vw;
@@ -163,146 +170,84 @@ header {
 
 }
 
-.java-image {
-    width: 35px;
-    height: 35px;
-    display: inline-block;
-    position: absolute;
-    left: 0px;
-    top: 52px;
-    background-color: white;
-}
+
 
 #java-bar {
     border-radius: 25px;
     height: 35px;
     display: inline-block;
+    max-width:70vw;
 }
 #background-container{
     border-radius: 25px;
     height: 35px;
-    width:999px;
+    width:70vw;
     background-color: rgb(51,102,153);
 }
 
-.python-image {
-    width: 35px;
-    height: 35px;
-    display: inline-block;
-    position: absolute;
-    left: 0px;
-    top: 119px;
-    background-color: white;
-}
+
 
 #python-bar {
     border-radius: 25px;
 
     height: 35px;
     display: inline-block;
+    max-width:70vw;
 }
 
-.VBA-image {
-    width: 35px;
-    height: 35px;
-    display: inline-block;
-    position: absolute;
-    left: 0px;
-    top: 186px;
-    background-color: white;
 
-}
 
 #VBA-bar {
     border-radius: 25px;
     height: 35px;
     display: inline-block;
+    max-width:70vw;
 }
 
-.HTML5-image {
-    width: 35px;
-    height: 35px;
-    display: inline-block;
-    position: absolute;
-    left: 0px;
-    top: 253px;
-    background-color: white;
 
-}
 
 #HTML5-bar {
     border-radius: 25px;
 
     height: 35px;
     display: inline-block;
+    max-width:70vw;
 }
 
-.CSS3-image {
-    width: 35px;
-    height: 35px;
-    display: inline-block;
-    position: absolute;
-    left: 0px;
-    top: 320px;
-    background-color: white;
 
-}
 
 #CSS3-bar {
     border-radius: 25px;
 
     height: 35px;
     display: inline-block;
+    max-width:70vw;
 }
 
-.JavaScript-image {
-    width: 35px;
-    height: 35px;
-    display: inline-block;
-    position: absolute;
-    left: 0px;
-    top: 387px;
-    background-color: white;
-
-}
 
 #JavaScript-bar {
     height: 35px;
     border-radius: 25px;
     display: inline-block;
+    max-width:70vw;
 }
 
-.JQuery-image {
-    width: 35px;
-    height: 35px;
-    display: inline-block;
-    position: absolute;
-    left: 0px;
-    top: 454px;
-    background-color: white;
 
-}
 
 #JQuery-bar {
     border-radius: 25px;
     height: 35px;
     display: inline-block;
+    max-width:70vw;
 }
 
-.SQL-image {
-    width: 35px;
-    height: 35px;
-    display: inline-block;
-    position: absolute;
-    left: 0px;
-    top: 521px;
-    background-color: white;
-}
+
 
 #SQL-bar {
     border-radius: 25px;
     height: 35px;
     display: inline-block;
+    max-width:70vw;
 }
 
 #projects {
@@ -317,18 +262,21 @@ header {
 }
 
 .project-box {
+    position:relative;
+    top:1vh;
     border: black;
     border: solid;
-    width: 350px;
+    margin:1vw;
+    width: 24vw;
     height: 250px;
-    margin-left: 20px;
-    margin-right: 20px;
     display: inline-block;
+    background-position:center;
 }
 
 #databases {
     background-image: url(http://i.imgur.com/UWtMGUS.jpg);
     background-size: 350px 250px;
+
 }
 
 #bearmaps {
@@ -341,7 +289,6 @@ header {
     background-size: 350px 250px;
 }
 
-/* TODO: add background images to these three project boxes */
 #scheme {
     background-image: url(https://inst.eecs.berkeley.edu/~cs61a/sp13/labs/lab09/lambda.svg);
     background-size: 350px 250px;
@@ -357,16 +304,7 @@ header {
     background-size: 350px 250px;
 }
 
-.button {
-    background: none;
-    border: none;
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    font-size: 30px;
-    position: relative;
-    top: 100px;
-}
+
 
 #databases:hover > #databases-text-container {
     background-image: url(http://images.all-free-download.com/images/graphiclarge/nostalgic_blue_background_04_hd_pictures_169785.jpg);
@@ -413,8 +351,8 @@ header {
 
 .button-text {
     height: 250px;
-    width: 350px;
-    font-family: 'Sofia';
+    width: 24vw;
+    font-family: 'Sofia', Impact, Charcoal, sans-serif;
 }
 
 #databases-text-container {
@@ -454,10 +392,11 @@ header {
     position: fixed;
     z-index: 1;
     padding-top: 50px;
+    padding-bottom: 50px;
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 90%;
     overflow: auto;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
@@ -506,7 +445,7 @@ header {
         width: 0;
     }
     100% {
-        width: 50vw;
+        width: 70vw;
     }
 }
 
@@ -524,7 +463,7 @@ header {
         width: 0px;
     }
     100% {
-        width: 830px;
+        width: 50vw;
     }
 }
 
@@ -543,7 +482,7 @@ header {
         width: 0px;
     }
     100% {
-        width: 750px;
+        width: 40vw;
     }
 }
 
@@ -585,7 +524,9 @@ header {
 }
 
 .slideshowImage {
-    height: 450px;
+    height: 50vh;
+    width:50vw;
+
 }
 
 .prev, .next {
@@ -739,42 +680,46 @@ header {
 }
 .image-text-container{
     position:relative;
-    display:inline;
-    max-width:100px;
+    width:10%;
     max-height:100px;
 }
 
 .contact-image{
-    width:100px;
-    height:100px;
-    display:inline-block;
-
+    width:7.2vw;
+    height:12vh;
+    min-width:70px;
+    min-height:70px;
+    position: relative;
+    display: inline-block;
 
 }
+
 #contact-text{
     font-size:25px;
     position:relative;
     font-family:'Amarante',sans-serif;
 
+
 }
-.contact-info{
-    color:white;
-    display:inline-block;
-    position:relative;
-    top:-50px;
-    left:75px;
+#contact-info-container{
+    position: relative;
     font-size:20px;
     text-align:center;
+    color:white;
+}
+.contact-info{
+    display: inline-block;
 }
 
 #phone{
-    top:100px;
-    left:550px;
+    top:20vh;
+    left:37vw;
 }
 #email{
-    top:200px;
-    left:329px;
+    top:10vh;
+    left:37vw;
 }
+
 
 #phone-text{
     color:rgb(0, 128, 192);
@@ -784,6 +729,16 @@ header {
 
 #email-text{
     color:rgb(0, 128, 192);
+    position:relative;
+    left:10vw;
+    bottom:9vh;
+    padding:20px;
+}
+
+#email-pic{
+    position: relative;
+    top:0;
+
 }
 #github{
     top:350px;
