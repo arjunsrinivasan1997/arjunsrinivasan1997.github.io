@@ -6,7 +6,7 @@ html, body {
 }
 
 #header-container {
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/66/UC-Berkeley-006-VLSB-downtown-Berkeley.jpg);
+    background-image: url("Images/Misc/Berkeley.jpg");
     background-size: 100% 100%;
     height: 100vh;
     padding: 0;
@@ -272,71 +272,71 @@ header {
 }
 
 #databases {
-    background-image: url(http://i.imgur.com/UWtMGUS.jpg);
+    background-image: url("Images/Databases/DatabasesBackground.jpg");
 
 }
 
 #bearmaps {
-    background-image: url(http://imgur.com/OLP41JP.jpg);
+    background-image: url("Images/Maps/BearMapsBackground.jpg");
 }
 
 #nbody {
-    background-image: url(http://imgur.com/UvIb53s.jpg);
+    background-image: url("Images/NBody/NBodyBackground.jpg");
 }
 
 #scheme {
-    background-image: url(https://inst.eecs.berkeley.edu/~cs61a/sp13/labs/lab09/lambda.svg);
+    background-image: url("Images/Scheme/SchemeBackground.jpg");
 }
 
 #Alexa {
-    background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/kindle/merch/2016/ALEXA/CP/TEST/alexa-cp-echo.jpg);
+    background-image: url("Images/Alexa/AlexaBackground.jpg");
 }
 
 #yelp {
-    background-image:url(http://imgur.com/keuS6rH.jpg);
+    background-image:url("Images/YelpMaps/YelpMapsBackground.jpg");
 }
 
 
 
 #databases:hover > #databases-text-container {
-    background-image: url(http://images.all-free-download.com/images/graphiclarge/nostalgic_blue_background_04_hd_pictures_169785.jpg);
+    background-image: url("Images/Misc/ProjectBoxBackground.jpg");
     background-size: 100% 100%;
     visibility: visible;
 
 }
 
 #bearmaps:hover > #bearmaps-text-container {
-    background-image: url(http://images.all-free-download.com/images/graphiclarge/nostalgic_blue_background_04_hd_pictures_169785.jpg);
+    background-image: url("Images/Misc/ProjectBoxBackground.jpg");
     background-size: 100% 100%;
     visibility: visible;
 }
 
 #nbody:hover > #nbody-text-container {
-    background-image: url(http://images.all-free-download.com/images/graphiclarge/nostalgic_blue_background_04_hd_pictures_169785.jpg);
+    background-image: url("Images/Misc/ProjectBoxBackground.jpg");
     background-size: 100% 100%;
     visibility: visible;
 }
 
 #scheme:hover > #scheme-text-container {
-    background-image: url(http://images.all-free-download.com/images/graphiclarge/nostalgic_blue_background_04_hd_pictures_169785.jpg);
+    background-image: url("Images/Misc/ProjectBoxBackground.jpg");
     background-size: 100% 100%;
     visibility: visible;
 }
 
 #Alexa:hover > #Alexa-text-container {
-    background-image: url(http://images.all-free-download.com/images/graphiclarge/nostalgic_blue_background_04_hd_pictures_169785.jpg);
+    background-image: url("Images/Misc/ProjectBoxBackground.jpg");
     background-size: 100% 100%;
     visibility: visible;
 }
 
 #maps:hover > #maps-text-container {
-    background-image: url(http://images.all-free-download.com/images/graphiclarge/nostalgic_blue_background_04_hd_pictures_169785.jpg);
+    background-image: url("Images/Misc/ProjectBoxBackground.jpg");
     background-size: 100% 100%;
     visibility: visible;
 }
 
 #yelp:hover > #yelp-text-container {
-    background-image: url(http://images.all-free-download.com/images/graphiclarge/nostalgic_blue_background_04_hd_pictures_169785.jpg);
+    background-image: url("Images/Misc/ProjectBoxBackground.jpg");
     background-size: 100% 100%;
     visibility: visible;
 }
@@ -730,7 +730,7 @@ header {
 }
 
 #github-button{
-    background-image: url(https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png);
+    background-image: url("Images/Misc/GitHub.png");
     width:100px;
     height:100px;
     background-size: 143px;
@@ -752,7 +752,7 @@ header {
 #facebook-button{
     padding:0;
     margin:0;
-    background-image: url(https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_color-256.png);
+    background-image: url("Images/Misc/Facebook.png");
     width:100px;
     height:100px;
     background-size: 143px;
