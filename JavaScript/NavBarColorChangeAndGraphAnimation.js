@@ -3,6 +3,7 @@ var top2 = $('#about-me').offset().top - 200;
 var top3 = $('#skills').offset().top;
 var top4 = $('#projects').offset().top;
 var top5 = $('#contact').offset().top;
+var navBar = $('.navbar');
 var animated = false;
 var javaBar = $('#java-bar');
 var pythonBar = $('#python-bar');
@@ -12,7 +13,9 @@ var CSSBar = $('#CSS3-bar');
 var JavaScriptBar = $('#JavaScript-bar');
 var JQueryBar = $('#JQuery-bar');
 var SQLBar = $('#SQL-bar');
-
+$(document).ready(function () {
+    navBar.css('background-color','#FFFFFF')
+});
 $(window).resize(function () {
     top1 = $('#header').offset().top + 10;
     top2 = $('#about-me').offset().top - 200;
@@ -50,40 +53,40 @@ $(window).resize(function () {
 
 });
 $(document).scroll(function () {
-    $('#nav-bar').css('z-index', '5');
+    $('#navbar-nav').css('z-index', '5');
     //console.log($(document).scrollTop());
     // change color of nav bar
     var position = $(document).scrollTop();
     if (position >= top2) {
-        $('#nav-bar').css('background-color', '#FFF');
+        $('#navbar-nav').css('background-color', '#FFF');
     } else {
-        $('#nav-bar').css('background-color', '');
+        $('#navbar-nav').css('background-color', '');
     }
     // Change color of each element in nav bar
-    if (position < top2 - 300) {
-        $('#about-link').css('color', '');
+    if (position >= top1 && position < top2 - 300) {
+        $('#about-me-link').removeClass("active")
     }
     else if (position >= top2 - 200 && position < top3 - 100) {
-        $('#skills-link').css('color', '');
-        $('#about-link').css('color', '#0000ff');
+        $('#skills-link').removeClass("active");
+        $('#about-me-link').addClass("active");
     } else if (position >= top3 - 200 && position < top4 - 100) {
 
-        $('#about-link').css('color', '');
-        $('#skills-link').css('color', '#0000ff');
-        $('#projects-link').css('color', '');
+        $('#about-me-link').removeClass("active");
+        $('#skills-link').addClass("active")
+        $('#projects-link').removeClass("active")
     } else if (position >= top4 - 200 && position < top5 - 100) {
-        $('#skills-link').css('color', '');
-        $('#projects-link').css('color', '#0000ff');
-        $('#contact-link').css('color', '');
+        $('#skills-link').removeClass("active")
+        $('#projects-link').addClass("active")
+        $('#contact-link').removeClass("active");
     } else if (position >= top5 - 200) {
-        $('#projects-link').css('color', '');
-        $('#contact-link').css('color', '0000ff');
+        $('#projects-link').removeClass("active")
+        $('#contact-link').addClass("active")
     }
     // Trigger graph animation
     if (position >= top3 - 200 && position < top4 && !animated) {
         animate();
     }
-});
+ });
 function animate() {
     animated = true;
 

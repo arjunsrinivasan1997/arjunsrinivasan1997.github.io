@@ -1,6 +1,15 @@
-
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+
+    <!-- JQuery Package.  Using Google Hosted JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- Bootstrap-->
+    <meta charset="=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Google Fonts.-->
     <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
@@ -8,27 +17,38 @@
     <link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Amarante' rel='stylesheet'>
-    <!-- JQuery Package.  Using Google Hosted JQuery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Amethysta' rel='stylesheet'>
     <!-- Main stylesheet -->
     <link rel="stylesheet" type="text/css" href="main.css">
-    <meta name="viewport" content="initial-scale=1">
 </head>
-<script>
 
-</script>
+</html>
 <body>
 <section id="header">
     <div id="header-container">
-        <header id="nav-bar" >
-            <nav>
-                <a id ="about-link" class="nav-bar-link" href="#about-me">About Me</a>
-                <a id ="skills-link" class="nav-bar-link" href="#skills">Skills</a>
-                <a id ="projects-link" class="nav-bar-link" href="#projects">Projects</a>
-                <a id ="contact-link" class="nav-bar-link" href="#contact">Contact</a>
-                <a class="nav-bar-link" href="https://drive.google.com/file/d/0Byv9izliU8yyNWl4elIwb2pVM28/view" target="_blank">Resume</a>
-            </nav>
-        </header>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"
+                            style="background-color:black">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a id="header-name" class="navbar-brand" href="#header">Arjun Srinivasan</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li id="about-me-link" class="nav-bar-link"><a href="#about-me">About Me</a></li>
+                        <li id="skills-link" class="nav-bar-link"><a href="#skills">Skills</a></li>
+                        <li id="projects-link" class="nav-bar-link"><a href="#projects">Projects</a></li>
+                        <li id="contact-link" class="nav-bar-link"><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
         <div id="name" align="center">
                 Arjun Srinivasan
             </div>
@@ -42,25 +62,22 @@
 </section>
 <section id="about-me">
     <div id="about-me-title">About Me</div>
-
-    <div class="about-me-text" id="ab1">
-        Hello! I'm Arjun Srinivasan, and I am a second
-        <br>
-        year UC Berkeley
-        undergrad studying computer <br>
-        science.
+    <div id ="first-row" class="row" align="center">
+        <div class="col-sm-12">
+          <img id="myPicture" class="img-responsive img-thumbnail" src="Images/Misc/myself.jpg" align="center">
+        </div>
     </div>
-    <div class="about-me-text" id="ab2">
-        I enjoy developing front end and back end programs.
-
-         I am also  extremely interested in Machine Learning,
-
-        Computer Graphics, and Data Science
+    <div class="row" align="center">
+        <div class="col-sm-12">
+            <div class="about-me-text"  id="ab1">
+                <p>
+                Hello! I'm Arjun Srinivasan, and I am a UC  Berkeley undergrad studying computer science.
+                I have experience in a wide vaierty  of front and  back end languages and tools. Additionally,
+                I am  also  extremely interested in  Machine Learning,Computer Graphics, and Data Science
+                </p>
+            </div>
+        </div>
     </div>
-    <div id="image-container" >
-        <img id="myPicture" src="Images/Misc/myself.jpg" align="center">
-    </div>
-
 
 
 </section>
@@ -69,11 +86,11 @@
             Skills
         </div>
     <div id="graph-container">
-        <div id="graph-bar-container" >
-            <div id="graph-bar-text" >
+        <div id="graph-bar-container">
+            <div id="graph-bar-text">
                         Java
             </div>
-            <div id="background-container" >
+            <div id="background-container">
                 <div class="bar-background" id="java-bar"></div>
             </div>
         </div>
@@ -81,7 +98,7 @@
             <div id="graph-bar-text">
                         Python
                     </div>
-            <div id="background-container" >
+            <div id="background-container">
                 <div class="bar-background" id="python-bar"></div>
 
             </div>
@@ -91,211 +108,224 @@
                     VBA
             </div>
             <div id="background-container">
-            <div class="bar-background" id="VBA-bar"></div>
-        </div>
-        <div id="graph-bar-container">
-            <div  id="graph-bar-text">
+                <div class="bar-background" id="VBA-bar"></div>
+            </div>
+            <div id="graph-bar-container">
+                <div id="graph-bar-text">
                     HTML
             </div>
-            <div id="background-container">
-            <div  class="bar-background" id="HTML5-bar"></div>
+                <div id="background-container">
+                    <div class="bar-background" id="HTML5-bar"></div>
+                </div>
             </div>
-        </div>
-        <div id="graph-bar-container">
-            <div id="graph-bar-text">
+            <div id="graph-bar-container">
+                <div id="graph-bar-text">
                     CSS
                 </div>
-            <div id ="background-container">
-            <div  class="bar-background" id="CSS3-bar"></div>
+                <div id="background-container">
+                    <div class="bar-background" id="CSS3-bar"></div>
+                </div>
             </div>
-        </div>
-        <div id="graph-bar-container">
-            <div id="graph-bar-text">
+            <div id="graph-bar-container">
+                <div id="graph-bar-text">
                     JavaScript
                 </div>
-            <div id="background-container">
-            <div class="bar-background" id="JavaScript-bar"></div>
+                <div id="background-container">
+                    <div class="bar-background" id="JavaScript-bar"></div>
+                </div>
             </div>
-        </div>
 
-        <div id="graph-bar-container">
-            <div id="graph-bar-text">
+            <div id="graph-bar-container">
+                <div id="graph-bar-text">
                     jQuery
                 </div>
-            <div id="background-container">
-            <div class="bar-background" id="JQuery-bar"></div>
+                <div id="background-container">
+                    <div class="bar-background" id="JQuery-bar"></div>
+                </div>
+
             </div>
 
-        </div>
-
-        <div id="graph-bar-container">
-            <div id="graph-bar-text">
+            <div id="graph-bar-container">
+                <div id="graph-bar-text">
                     SQL
                 </div>
-            <div id="background-container">
-            <div class="bar-background" id="SQL-bar"></div>
+                <div id="background-container">
+                    <div class="bar-background" id="SQL-bar"></div>
+                </div>
             </div>
-        </div>
 
-    </div>
+        </div>
 
 </section>
 <section id="projects">
     <div id="title-text" style="color:black">Projects</div>
-    <div class="row-container" align="center">
-        <div class="project-box" id="databases">
-            <div class="button-text" id="databases-text-container">
+    <div class="row" align="center">
+        <div class="col-sm-4">
+            <div class="button-text project-box" id="databases-text-container">
                 <div class="project-text"> Databases</div>
             </div>
         </div>
-        <div class="project-box" id="bearmaps">
-            <div class="button-text" id="bearmaps-text-container">
-                <div class="project-text">BearMaps</div>
-            </div>
-        </div>
-        <div class="project-box" id="nbody">
-            <div class="button-text" id="nbody-text-container">
-                <div class="project-text">NBody</div>
-            </div>
-        </div>
-        <div id="databasesModal" class="modal">
-
-            <div class="modal-content">
-                <span id="databasesClose" class="close">&times;</span>
-                <h1 class="project-title-text"> Databases (Java)</h1>
-                <p class="project-body-text"> Built a text based relational database management system (DBMS).
-                    Additionaly the SQL language was implemented so that a user can interact with the database.
-                    This system supports table loading, saving, joining, and using select statements along with aliasing
-                    to extract information from tables.</p>
-                <div class="slideshow-container">
-
-                    <div class="mySlidesdb fade">
-                        <div class="numbertext">1 / 4</div>
-                        <img class="slideshowImage" src="Images/Databases/Databases1.jpg">
-                    </div>
-
-                    <div class="mySlidesdb fade">
-                        <div class="numbertext">2 / 4</div>
-                        <img class="slideshowImage" src="Images/Databases/Databases2.jpg">
-                    </div>
-
-                    <div class="mySlidesdb fade">
-                        <div class="numbertext">3 / 4</div>
-                        <img class="slideshowImage" src="Images/Databases/Databases3.jpg">
-                    </div>
-                    <div class="mySlidesdb fade">
-                        <div class="numbertext"> 4 / 4</div>
-                        <img class="slideshowImage" src="Images/Databases/Databases4.jpg">
-                    </div>
-                    <a class="prev" onclick="plusSlidesdb(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlidesdb(1)">&#10095;</a>
-
-                </div>
-
-
-                <div style="text-align:center">
-                    <span class="dotdb dot" onclick="currentSlidedb(1)"></span>
-                    <span class="dotdb dot" onclick="currentSlidedb(2)"></span>
-                    <span class="dotdb dot" onclick="currentSlidedb(3)"></span>
-                    <span class="dotdb dot" onclick="currentSlidedb(4)"></span>
-                </div>
-            </div>
-
-        </div>
-
-        <div id="BearMapsModal" class="modal">
-            <div class="modal-content">
-                <span id="BearMapsClose" class="close">&times;</span>
-                <h1 class="project-title-text"> BearMaps (Java) </h1>
-                <p class="project-body-text">Built a web based mapping application that supports zooming in and out,
-                    mouse based map movement,
-                    autocomplete using prefix matching, drawing the shortest path between two points on the map, and
-                    drawing places of interest on the map </p>.
-                <div class="slideshow-container">
-
-                    <div class="mySlidesbm fade">
-                        <div class="numbertext">1 / 3</div>
-                        <img class="slideshowImage" src="Images/Maps/Maps1.jpg">
-                    </div>
-
-                    <div class="mySlidesbm fade">
-                        <div class="numbertext">2 / 3</div>
-                        <img class="slideshowImage" src="Images/Maps/Maps2.jpg">
-                    </div>
-
-                    <div class="mySlidesbm fade">
-                        <div class="numbertext">3 / 3</div>
-                        <img class="slideshowImage" src="Images/Maps/Maps3.jpg">
-                    </div>
-
-
-                    <a class="prev" onclick="plusSlidesbm(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlidesbm(1)">&#10095;</a>
-
-                </div>
-
-
-                <div style="text-align:center">
-                    <span class="dotbm dot" onclick="currentSlidebm(1)"></span>
-                    <span class="dotbm dot" onclick="currentSlidebm(2)"></span>
-                    <span class="dotbm dot" onclick="currentSlidebm(3)"></span>
+        <div class="col-sm-4">
+            <div class="project-box" id="bearmaps">
+                <div class="button-text" id="bearmaps-text-container">
+                    <div class="project-text">BearMaps</div>
                 </div>
             </div>
         </div>
-        <div id="NBodyModal" class="modal">
 
-            <div class="modal-content">
-                <span id="NBodyClose" class="close">&times;</span>
-                <h1 class="project-title-text">NBody (Java)</h1>
-                <p class="project-body-text">Built a program simulating the motion of N objects in a plane, accounting
-                    for the gravitational forces mutually affecting each object based on the mass of each object.</p>
-                <div class="slideshow-container">
-
-                    <div class="mySlidesnb fade">
-                        <div class="numbertext">1 / 3</div>
-                        <img class="slideshowImage" src="Images/NBody/NBody1.jpg">
-                    </div>
-
-                    <div class="mySlidesnb fade">
-                        <div class="numbertext">2 / 3</div>
-                        <img class="slideshowImage" src="Images/NBody/NBody2.jpg">
-                    </div>
-
-                    <div class="mySlidesnb fade">
-                        <div class="numbertext">3 / 3</div>
-                        <img class="slideshowImage" src="Images/NBody/NBody3.jpg">
-                    </div>
-
-
-                    <a class="prev" onclick="plusSlidesnb(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlidesnb(1)">&#10095;</a>
-
-                </div>
-
-
-                <div style="text-align:center">
-                    <span class="dotnb dot" onclick="currentSlidenb(1)"></span>
-                    <span class="dotnb dot" onclick="currentSlidenb(2)"></span>
-                    <span class="dotnb dot" onclick="currentSlidenb(3)"></span>
+        <div class="col-sm-4">
+            <div class="project-box" id="nbody">
+                <div class="button-text" id="nbody-text-container">
+                    <div class="project-text">NBody</div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="row-container" align="center">
-        <div class="project-box" id="scheme">
-            <div class="button-text" id="scheme-text-container">
-                <div class="project-text"> Scheme</div>
+    <div id="databasesModal" class="modal">
+
+        <div class="modal-content">
+            <span id="databasesClose" class="close">&times;</span>
+            <h1 class="project-title-text"> Databases (Java)</h1>
+            <p class="project-body-text"> Built a text based relational database management system (DBMS).
+                Additionaly the SQL language was implemented so that a user can interact with the database.
+                This system supports table loading, saving, joining, and using select statements along with aliasing
+                to extract information from tables.</p>
+            <div class="slideshow-container">
+
+                <div class="mySlidesdb fade">
+                    <div class="numbertext">1 / 4</div>
+                    <img class="slideshowImage" src="Images/Databases/Databases1.jpg">
+                </div>
+
+                <div class="mySlidesdb fade">
+                    <div class="numbertext">2 / 4</div>
+                    <img class="slideshowImage" src="Images/Databases/Databases2.jpg">
+                </div>
+
+                <div class="mySlidesdb fade">
+                    <div class="numbertext">3 / 4</div>
+                    <img class="slideshowImage" src="Images/Databases/Databases3.jpg">
+                </div>
+                <div class="mySlidesdb fade">
+                    <div class="numbertext"> 4 / 4</div>
+                    <img class="slideshowImage" src="Images/Databases/Databases4.jpg">
+                </div>
+                <a class="prev" onclick="plusSlidesdb(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlidesdb(1)">&#10095;</a>
+
+            </div>
+
+
+            <div style="text-align:center">
+                <span class="dotdb dot" onclick="currentSlidedb(1)"></span>
+                <span class="dotdb dot" onclick="currentSlidedb(2)"></span>
+                <span class="dotdb dot" onclick="currentSlidedb(3)"></span>
+                <span class="dotdb dot" onclick="currentSlidedb(4)"></span>
             </div>
         </div>
-        <div class="project-box" id="yelp">
-            <div class="button-text" id="yelp-text-container">
-                <div class="project-text">BearMaps</div>
+
+    </div>
+
+    <div id="BearMapsModal" class="modal">
+        <div class="modal-content">
+            <span id="BearMapsClose" class="close">&times;</span>
+            <h1 class="project-title-text"> BearMaps (Java) </h1>
+            <p class="project-body-text">Built a web based mapping application that supports zooming in and out,
+                mouse based map movement,
+                autocomplete using prefix matching, drawing the shortest path between two points on the map, and
+                drawing places of interest on the map </p>.
+            <div class="slideshow-container">
+
+                <div class="mySlidesbm fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img class="slideshowImage" src="Images/Maps/Maps1.jpg">
+                </div>
+
+                <div class="mySlidesbm fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img class="slideshowImage" src="Images/Maps/Maps2.jpg">
+                </div>
+
+                <div class="mySlidesbm fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img class="slideshowImage" src="Images/Maps/Maps3.jpg">
+                </div>
+
+
+                <a class="prev" onclick="plusSlidesbm(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlidesbm(1)">&#10095;</a>
+
+            </div>
+
+
+            <div style="text-align:center">
+                <span class="dotbm dot" onclick="currentSlidebm(1)"></span>
+                <span class="dotbm dot" onclick="currentSlidebm(2)"></span>
+                <span class="dotbm dot" onclick="currentSlidebm(3)"></span>
             </div>
         </div>
-        <div class="project-box" id="Alexa">
-            <div class="button-text" id="Alexa-text-container">
-                <div class="project-text">Alexa Skills</div>
+    </div>
+    <div id="NBodyModal" class="modal">
+
+        <div class="modal-content">
+            <span id="NBodyClose" class="close">&times;</span>
+            <h1 class="project-title-text">NBody (Java)</h1>
+            <p class="project-body-text">Built a program simulating the motion of N objects in a plane, accounting
+                for the gravitational forces mutually affecting each object based on the mass of each object.</p>
+            <div class="slideshow-container">
+
+                <div class="mySlidesnb fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img class="slideshowImage" src="Images/NBody/NBody1.jpg">
+                </div>
+
+                <div class="mySlidesnb fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img class="slideshowImage" src="Images/NBody/NBody2.jpg">
+                </div>
+
+                <div class="mySlidesnb fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img class="slideshowImage" src="Images/NBody/NBody3.jpg">
+                </div>
+
+
+                <a class="prev" onclick="plusSlidesnb(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlidesnb(1)">&#10095;</a>
+
+            </div>
+
+
+            <div style="text-align:center">
+                <span class="dotnb dot" onclick="currentSlidenb(1)"></span>
+                <span class="dotnb dot" onclick="currentSlidenb(2)"></span>
+                <span class="dotnb dot" onclick="currentSlidenb(3)"></span>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="row" align="center">
+        <div class="col-sm-4">
+            <div class="project-box" id="scheme">
+                <div class="button-text" id="scheme-text-container">
+                    <div class="project-text"> Scheme</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="project-box" id="yelp">
+                <div class="button-text" id="yelp-text-container">
+                    <div class="project-text"> BearMaps</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="project-box" id="Alexa">
+                <div class="button-text" id="Alexa-text-container">
+                    <div class="project-text"> Alexa Skills</div>
+                </div>
             </div>
         </div>
         <div id="SchemeModal" class="modal">
@@ -303,8 +333,10 @@
             <div class="modal-content">
                 <span id="SchemeClose" class="close">&times;</span>
                 <h1 class="project-title-text"> Scheme (Python)</h1>
-                <p1 class="project-body-text"> Built an interpreter for the scheme language that supports a wide variety of features such as,
-                    variable and function definitions, short circuiting logical expressions, tail recursion, and dynamically scoped procedures
+                <p1 class="project-body-text"> Built an interpreter for the scheme language that supports a wide variety
+                    of features such as,
+                    variable and function definitions, short circuiting logical expressions, tail recursion, and
+                    dynamically scoped procedures
                 </p1>
                 <div class="slideshow-container">
 
@@ -344,14 +376,16 @@
                 <span id="AlexaClose" class="close">&times;</span>
                 <h1 class="project-title-text"> Tampa Bay Sports Trivia (JavaScript & Alexa Skills Kit)
                 </h1>
-                <p class ="project-body-text">
-                    Built a trivia game for devices that support Amazon Alexa that asks the user questions, waits for an answer and then determines if they gave the correct answer. Currently, more than 700 people use this skill.
+                <p class="project-body-text">
+                    Built a trivia game for devices that support Amazon Alexa that asks the user questions, waits for an
+                    answer and then determines if they gave the correct answer. Currently, more than 700 people use this
+                    skill.
                 </p>
                 <div class="slideshow-container">
 
                     <div class="mySlidesAlexa fade">
                         <div class="numbertext">1 / 2</div>
-                        <img class="slideshowImage" width ="800px" src="Images/Alexa/Alexa1.jpg">
+                        <img class="slideshowImage" width="800px" src="Images/Alexa/Alexa1.jpg">
                     </div>
 
                     <div class="mySlidesAlexa fade">
@@ -373,7 +407,9 @@
                 <span id="YelpClose" class="close">&times;</span>
                 <h1 class="project-title-text">Yelp Maps (Python)</h1>
                 <p class="project-body-text">
-                    Created a visualization of restaurant ratings using machine learning and the Yelp academic dataset to  predict the rating a user will give a restaurant, based on the ratings that the user has given other similar restaurants.
+                    Created a visualization of restaurant ratings using machine learning and the Yelp academic dataset
+                    to predict the rating a user will give a restaurant, based on the ratings that the user has given
+                    other similar restaurants.
                 </p>
                 <div class="slideshow-container">
 
@@ -411,32 +447,28 @@
 </section>
 
 <section id="contact">
-    <div id="title-text"  style="color:rgb(255,255,192)">Contact</div>
-    <div id="contact-text" align="center" style="color:white"> If you have any questions, about my skills or my projects, please don't hesitate to reach out to me.</div>
+    <div id="title-text" style="color:rgb(255,255,192)">Contact</div>
+    <div id="contact-text" align="center"
+         style="color:white"> If you have any questions, about my skills or my projects, please don't hesitate to reach out to me.</div>
     <div id="contact-info-container">
         <div class="image-text-container" align="center" id="email">
             <img class="contact-image" id="email-pic" src="Images/Contact/Email.png">
-            <a class="contact-info" id="email-text" href="mailto:arjunsrinivasan1997@gmail.com" >arjunsrinivasan1997@gmail.com</a>
+            <a class="contact-info" id="email-text" href="mailto:arjunsrinivasan1997@gmail.com">arjunsrinivasan1997@gmail.com</a>
         </div>
         <div class="image-text-container" align="center" id="phone">
             <img class="contact-image" id="phone-pic" src="Images/Contact/Phone.png">
-            <a class="contact-info" id="phone-text" href="tel:7272524303" >727-252-4303</a>
+            <a class="contact-info" id="phone-text" href="tel:7272524303">727-252-4303</a>
         </div>
-
-
-
-
 
 
     </div>
     <div class="button-container" id="github">
-        <a  id="github-button" href="https://github.com/arjunsrinivasan1997" target="_blank"></a>
+        <a id="github-button" href="https://github.com/arjunsrinivasan1997" target="_blank"></a>
     </div>
     <div class="button-container" id="facebook">
         <a id="facebook-button" href="https://facebook.com/arjun.srinivasan.73" target="_blank"></a>
     </div>
 </section>
-
 
 
 <!-- Script responsible for smooth scrolling animation -->
