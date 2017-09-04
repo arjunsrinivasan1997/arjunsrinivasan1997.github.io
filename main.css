@@ -389,6 +389,7 @@ ul.nav a:hover { color: blue !important; }
 #databases {
     background-image: url("Images/Databases/DatabasesBackground.jpg");
     background-size: 100% 100%;
+    cursor: pointer;
 }
 
 #bearmaps {
@@ -481,6 +482,7 @@ ul.nav a:hover { color: blue !important; }
     object-fit: contain;
     margin-left:0px;
     padding-left: 0px;
+    cursor:pointer;
 
 
 }
