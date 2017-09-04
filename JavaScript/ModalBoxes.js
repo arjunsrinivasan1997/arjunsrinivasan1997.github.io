@@ -28,9 +28,9 @@ function handler() {
 
 }
 
-$('#databases-text-container').on('touchstart tap click touch', function(){
+/*$('#databases-text-container').on('touchstart tap click touch', function(){
     databasesModal.style.display = "block";
-});
+});*/
 
 bearMapsButton.onclick = function () {
     bearMapsModal.style.display = "block";
