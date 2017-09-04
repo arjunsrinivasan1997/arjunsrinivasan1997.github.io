@@ -14,7 +14,8 @@ var JavaScriptBar = $('#JavaScript-bar');
 var JQueryBar = $('#JQuery-bar');
 var SQLBar = $('#SQL-bar');
 $(document).ready(function () {
-    navBar.css('background-color','#FFFFFF')
+    navBar.css('background-color','#FFFFFF');
+    $('#navbar-nav').css('z-index', '5');
 });
 $(window).resize(function () {
     top1 = $('#header').offset().top + 10;
@@ -40,13 +41,14 @@ $(window).resize(function () {
         CSSBar.css('width', '50vw');
 
         JavaScriptBar.css('animation', '');
-        JavaScriptBar.css('width', '50vw');
+        JavaScriptBar.css('width', '60vw');
 
         JQueryBar.css('animation', '');
         JQueryBar.css('width', '40vw');
 
         SQLBar.css('animation', '');
         SQLBar.css('width', '40vw');
+        $('#navbar-nav').css('z-index', '5');
 
 
     }
@@ -63,22 +65,22 @@ $(document).scroll(function () {
         $('#navbar-nav').css('background-color', '');
     }
     // Change color of each element in nav bar
-    if (position >= top1 && position < top2 - 300) {
+    if (position >= top1 && position < top2 - 200) {
         $('#about-me-link').removeClass("active")
     }
-    else if (position >= top2 - 200 && position < top3 - 100) {
+    else if (position >= top2 - 200 && position < top3 ) {
         $('#skills-link').removeClass("active");
         $('#about-me-link').addClass("active");
-    } else if (position >= top3 - 200 && position < top4 - 100) {
+    } else if (position >= top3 - 200 && position < top4 -300) {
 
         $('#about-me-link').removeClass("active");
         $('#skills-link').addClass("active")
         $('#projects-link').removeClass("active")
-    } else if (position >= top4 - 200 && position < top5 - 100) {
+    } else if (position >= top4  - 200  && position < top5 ) {
         $('#skills-link').removeClass("active")
         $('#projects-link').addClass("active")
         $('#contact-link').removeClass("active");
-    } else if (position >= top5 - 200) {
+    } else if (position >= top5 ) {
         $('#projects-link').removeClass("active")
         $('#contact-link').addClass("active")
     }
@@ -114,7 +116,7 @@ function animate() {
     CSSBar.css('animation-fill-mode', 'forwards');
 
     JavaScriptBar.css('background-color', '#000');
-    JavaScriptBar.css('animation', 'threeQuarterAnimation 3.5s');
+    JavaScriptBar.css('animation', 'fourFifthsAnimation 3.5s');
     JavaScriptBar.css('animation-fill-mode', 'forwards');
 
 

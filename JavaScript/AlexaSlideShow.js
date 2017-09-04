@@ -1,30 +1,17 @@
 var slideIndex = 1;
-showSlidesAlexa(slideIndex);
+showDivsAl(slideIndex);
 
-function plusSlidesAlexa(n) {
-    showSlidesAlexa(slideIndex += n);
+function plusDivsAl(n) {
+    showDivsAl(slideIndex += n);
 }
 
-function currentSlideAlexa(n) {
-    showSlidesAlexa(slideIndex = n);
-}
-
-function showSlidesAlexa(n) {
+function showDivsAl(n) {
     var i;
-    var slides = document.getElementsByClassName("mySlidesAlexa");
-    var dots = document.getElementsByClassName("dotAlexa");
-    if (n > slides.length) {
-        slideIndex = 1
+    var x = document.getElementsByClassName("mySlidesAlexa");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
     }
-    if (n < 1) {
-        slideIndex = slides.length
-    }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
+    x[slideIndex-1].style.display = "block";
 }

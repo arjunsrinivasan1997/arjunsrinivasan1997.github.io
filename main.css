@@ -283,16 +283,17 @@ ul.nav a:hover { color: blue !important; }
     width: 50px;
 }
 
-#graph-bar-container {
+.graph-bar-container {
     position: relative;
     height: 10vh;
     padding: 0.5vh;
 
 }
 
-#graph-bar-text {
+.graph-bar-text {
     font-size: 3vh;
     font-family: 'Allerta Stencil', serif;
+
 
 }
 
@@ -309,15 +310,20 @@ ul.nav a:hover { color: blue !important; }
     max-width: 70vw;
 }
 
-#background-container {
+.background-container {
     border-radius: 25px;
     height: 4.3vh;
     width: 70vw;
     background-color: rgb(51, 102, 153);
+    position: absolute;
+    z-index: 0;
 }
 
 .bar-background {
     height: 4.3vh;
+    position:absolute;
+    z-index:1;
+
 }
 
 #python-bar {
@@ -384,12 +390,10 @@ ul.nav a:hover { color: blue !important; }
     margin-bottom: 1vw;
     margin-left: 0;
     margin-right: 0;
-    width: 75%;
+    width: 73%;
     height: 33%;
-    display: inline-block;
-
+    max-width:400px;
 }
-
 #databases {
     background-image: url("Images/Databases/DatabasesBackground.jpg");
     background-size: 100% 100%;
@@ -420,69 +424,76 @@ ul.nav a:hover { color: blue !important; }
     background-size: 100% 100%;
 }
 
-#databases-text-container:hover {
+#databases:hover > #databases-text-container {
     background-image: url("Images/Misc/ProjectBoxBackground.jpg");
-    background-size: 100% 100%;
-    background-position: center;
+    background-repeat: no-repeat;
+    visibility: visible;
+    width:100%;
+
 
 }
 
 #bearmaps:hover > #bearmaps-text-container {
     background-image: url("Images/Misc/ProjectBoxBackground.jpg");
-    background-size: 98.1% 100%;
     visibility: visible;
     background-repeat: no-repeat;
+    width:100%;
 
 }
 
 #nbody:hover > #nbody-text-container {
     background-image: url("Images/Misc/ProjectBoxBackground.jpg");
-    background-size: 98.1% 100%;
     visibility: visible;
     background-repeat: no-repeat;
+    width:100%;
 
 }
 
 #scheme:hover > #scheme-text-container {
     background-image: url("Images/Misc/ProjectBoxBackground.jpg");
-    background-size: 98.1% 100%;
     visibility: visible;
     background-repeat: no-repeat;
+    width:100%;
 
 }
 
 #Alexa:hover > #Alexa-text-container {
     background-image: url("Images/Misc/ProjectBoxBackground.jpg");
-    background-size: 98.1% 100%;
     visibility: visible;
     background-repeat: no-repeat;
+    width:100%;
 
 }
 
 #maps:hover > #maps-text-container {
     background-image: url("Images/Misc/ProjectBoxBackground.jpg");
-    background-size: 98.1% 100%;
     visibility: visible;
     background-repeat: no-repeat;
+    width:100%;
 
 }
 
 #yelp:hover > #yelp-text-container {
     background-image: url("Images/Misc/ProjectBoxBackground.jpg");
-    background-size: 98.1% 100%;
     visibility: visible;
     background-repeat: no-repeat;
+    width:100%;
 
 }
 
 .button-text {
-    height: 250px;
-    width: 24vw;
+    height:250px;
+    width:330px;
+    background-size:105% 100%;
     font-family: 'Sofia', Impact, Charcoal, sans-serif;
+    object-fit: contain;
+    margin-left:0px;
+    padding-left: 0px;
 }
 
 #databases-text-container {
-    background-image: url("Images/Databases/DatabasesBackground.jpg");
+    visibility: hidden;
+
 }
 
 #bearmaps-text-container {
@@ -535,19 +546,28 @@ ul.nav a:hover { color: blue !important; }
     padding: 20px;
     border: 1px solid #888;
     width: 90%;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+
 }
 
 /* The Close Button */
 .close {
-    color: #aaaaaa;
+    color: #000000;
     float: right;
     font-size: 28px;
     font-weight: bold;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+
 }
 
 .close:hover,
 .close:focus {
-    color: #000;
+    color: #000000;
     text-decoration: none;
     cursor: pointer;
 }
@@ -556,6 +576,7 @@ ul.nav a:hover { color: blue !important; }
     font-size: 30px;
     padding-top: 10px;
     font-family: Impact, Charcoal, sans-serif;
+    text-align:center;
 }
 
 .project-body-text {
@@ -573,6 +594,15 @@ ul.nav a:hover { color: blue !important; }
     100% {
         width: 70vw;
     }
+}
+@-webkit-keyframes fourFifthsAnimation {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 60vw;
+    }
+
 }
 
 @-webkit-keyframes threeQuarterAnimation {
@@ -624,9 +654,75 @@ ul.nav a:hover { color: blue !important; }
 }
 
 .slideshowImage {
-    height: 50vh;
-    width: 50vw;
+    display: block;
+    align-content: center;
+    max-height:700px;
 
+
+}
+.slider-holder
+{
+    width: 800px;
+    height: 400px;
+    background-color: yellow;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    text-align: center;
+    margin-bottom:30px;
+    overflow: hidden;
+}
+
+.image-holder
+{
+    width: 2400px;
+    background-color: red;
+    height: 400px;
+    clear: both;
+    position: relative;
+
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+}
+
+.slider-image
+{
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+#slider-image-1:target ~ .image-holder
+{
+    left: 0px;
+}
+
+#slider-image-2:target ~ .image-holder
+{
+    left: -800px;
+}
+
+#slider-image-3:target ~ .image-holder
+{
+    left: -1600px;
+}
+
+.button-holder
+{
+    position: relative;
+    top: -20px;
+}
+
+.slider-change
+{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background-color: brown;
 }
 
 .prev, .next {
@@ -642,6 +738,10 @@ ul.nav a:hover { color: blue !important; }
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     background-color: grey;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+
 }
 
 .next {

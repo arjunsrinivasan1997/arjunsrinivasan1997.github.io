@@ -9,12 +9,12 @@ var schemeModal = document.getElementById('SchemeModal');
 var alexaModal = document.getElementById('AlexaModal');
 var yelpModal = document.getElementById('YelpMapsModal');
 
-var databasesButton = document.getElementById("databases");
-var bearMapsButton = document.getElementById("bearmaps");
-var nbodyButton = document.getElementById("nbody");
-var schemeButton = document.getElementById("scheme");
-var alexaButton = document.getElementById("Alexa");
-var yelpButton = document.getElementById("yelp");
+var databasesButton = document.getElementById("databases-text-container");
+var bearMapsButton = document.getElementById("bearmaps-text-container");
+var nbodyButton = document.getElementById("nbody-text-container");
+var schemeButton = document.getElementById("scheme-text-container");
+var alexaButton = document.getElementById("Alexa-text-container");
+var yelpButton = document.getElementById("yelp-text-container");
 
 var databasesSpan = document.getElementById("databasesClose");
 var bearMapsSpan = document.getElementById("BearMapsClose");
@@ -62,17 +62,17 @@ yelpSpan.onclick = function () {
 };
 // Closes the modal if the viewer clicks anywhere outside of the modal
 window.onclick = function(event) {
-    if (event.target == databasesModal) {
+    if (event.target === databasesModal) {
         databasesModal.style.display = "none";
-    } else if(event.target == bearMapsModal) {
+    } else if(event.target === bearMapsModal) {
         bearMapsModal.style.display = "none"
-    } else if (event.target == nbodyModal) {
+    } else if (event.target === nbodyModal) {
         nbodyModal.style.display = "none"
-    } else if (event.target == schemeModal) {
+    } else if (event.target === schemeModal) {
         schemeModal.style.display = "none"
-    } else if (event.target == alexaModal) {
+    } else if (event.target === alexaModal) {
         alexaModal.style.display = "none"
-    } else if (event.target == yelpModal) {
+    } else if (event.target === yelpModal) {
         yelpModal.style.display = "none"
     }
 };
