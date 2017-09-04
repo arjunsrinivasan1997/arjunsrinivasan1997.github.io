@@ -448,7 +448,7 @@ ul.nav a:hover { color: blue !important; }
 
 }
 
-.project-box:hover > .button-text {
+#Alexa:hover > #Alexa-text-container {
     background-image: url("Images/Misc/ProjectBoxBackground.jpg");
     background-repeat: no-repeat;
     opacity: 1;
