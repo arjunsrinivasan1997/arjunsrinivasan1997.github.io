@@ -27,15 +27,11 @@ function handler() {
     databasesModal.style.display = "block";
 
 }
-databasesButton.on('click', function(){
+
+databasesButton.on('click tap',  function(){
     databasesModal.style.display = "block";
 });
-databasesButton.on('touchstart', function(){
-    databasesModal.style.display = "block";
-});
-databasesButton.on('tap', function(){
-    databasesModal.style.display = "block";
-});
+
 bearMapsButton.onclick = function () {
     bearMapsModal.style.display = "block";
 };
