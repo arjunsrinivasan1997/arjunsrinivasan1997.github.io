@@ -428,24 +428,24 @@ ul.nav a:hover { color: blue !important; }
 
 #bearmaps:hover > #bearmaps-text-container {
     background-image: url("Images/Misc/ProjectBoxBackground.jpg");
-    visibility: visible;
     background-repeat: no-repeat;
+    opacity: 1;
     width:100%;
 
 }
 
 #nbody:hover > #nbody-text-container {
     background-image: url("Images/Misc/ProjectBoxBackground.jpg");
-    visibility: visible;
     background-repeat: no-repeat;
+    opacity: 1;
     width:100%;
 
 }
 
 #scheme:hover > #scheme-text-container {
     background-image: url("Images/Misc/ProjectBoxBackground.jpg");
-    visibility: visible;
     background-repeat: no-repeat;
+    opacity: 1;
     width:100%;
 
 }
@@ -460,16 +460,16 @@ ul.nav a:hover { color: blue !important; }
 
 #maps:hover > #maps-text-container {
     background-image: url("Images/Misc/ProjectBoxBackground.jpg");
-    visibility: visible;
     background-repeat: no-repeat;
+    opacity: 1;
     width:100%;
 
 }
 
 #yelp:hover > #yelp-text-container {
     background-image: url("Images/Misc/ProjectBoxBackground.jpg");
-    visibility: visible;
     background-repeat: no-repeat;
+    opacity: 1;
     width:100%;
 
 }
@@ -494,24 +494,28 @@ ul.nav a:hover { color: blue !important; }
 }
 
 #bearmaps-text-container {
-    visibility: hidden;
+    opacity: 0;
+    cursor: pointer;
 }
 
 #nbody-text-container {
-    visibility: hidden;
+    opacity: 0;
+    cursor: pointer;
 }
 
 #scheme-text-container {
-    visibility: hidden;
+    opacity: 0;
+    cursor: pointer;
 }
 
 #Alexa-text-container {
-    opacity:0;
+    opacity: 0;
     cursor: pointer;
 }
 
 #yelp-text-container {
-    visibility: hidden;
+    opacity: 0;
+    cursor: pointer;
 }
 
 .project-text {
