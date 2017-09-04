@@ -993,11 +993,8 @@ ul.nav a:hover { color: blue !important; }
 }
 /*Fixing ios hover bug*/
 @media (pointer: fine) {
-    a span {
-        display: none;
-    }
-    a:hover div {
-        display: inline-block;
+    a > div {
+        opacity:1;
     }
 }
 
