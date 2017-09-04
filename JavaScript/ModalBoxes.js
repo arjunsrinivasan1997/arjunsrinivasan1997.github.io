@@ -23,7 +23,10 @@ var schemeSpan = document.getElementById("SchemeClose");
 var alexaSpan = document.getElementById("AlexaClose");
 var yelpSpan =document.getElementById("YelpClose");
 // Activating the button onclick functions
+function handler() {
+    databasesModal.style.display = "block";
 
+}
 databasesButton.on('click', function(){
     databasesModal.style.display = "block";
 });
