@@ -38,7 +38,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a id="header-name" class="navbar-brand" href="#header">Finally?</a>
+                    <a id="header-name" class="navbar-brand" href="#header">Arjun Srinivasan</a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
@@ -171,28 +171,32 @@
     <div id="title-text" style="color:black">Projects</div>
     <div class="row" align="center">
         <div class="col-sm-4">
-            <a onclick="handler()" style="color: black;" >
+            <a onclick="ProjectClickHandler(0)" style="color: black;">
                 <div class="project-box" id="databases">
 
                     <div class="button-text" id="databases-text-container">
-                        <div class="project-text" > Databases</div>
+                        <div class="project-text"> Databases</div>
                     </div>
                 </div>
             </a>
         </div>
         <div class="col-sm-4">
-            <div class="project-box" id="Alexa">
-                <div class="button-text" id="Alexa-text-container">
-                    <div class="project-text"> Alexa Skills</div>
+            <a onclick="ProjectClickHandler(1)" style="color: black;">
+                <div class="project-box" id="Alexa">
+                    <div class="button-text" id="Alexa-text-container">
+                        <div class="project-text"> Alexa Skills</div>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
         <div class="col-sm-4">
-            <div class="project-box" id="bearmaps">
-                <div class="button-text" id="bearmaps-text-container">
-                    <div class="project-text">BearMaps</div>
+            <a onclick="ProjectClickHandler(2)" style="color: black;">
+                <div class="project-box" id="bearmaps">
+                    <div class="button-text" id="bearmaps-text-container">
+                        <div class="project-text">BearMaps</div>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
     </div>
     <div id="databasesModal" class="modal">
@@ -208,14 +212,17 @@
                 <div class="w3-content w3-display-container">
                     <button class="prev w3-button w3-black w3-display-left" onclick="plusDivsDB(-1)">&#10094;</button>
                     <button class="next w3-button w3-black w3-display-right" onclick="plusDivsDB(1)">&#10095;</button>
-                    <img class="mySlidesdb slideshowImage img-responsive" src="Images/Databases/Databases1.jpg" style="width:100%">
-                    <img class="mySlidesdb slideshowImage img-responsive" src="Images/Databases/Databases2.jpg" style="width:100%">
-                    <img class="mySlidesdb slideshowImage img-responsive" src="Images/Databases/Databases3.jpg" style="width:100%">
-                    <img class="mySlidesdb slideshowImage img-responsive" src="Images/Databases/Databases4.jpg" style="width:100%">
+                    <img class="mySlidesdb slideshowImage img-responsive" src="Images/Databases/Databases1.jpg"
+                         style="width:100%">
+                    <img class="mySlidesdb slideshowImage img-responsive" src="Images/Databases/Databases2.jpg"
+                         style="width:100%">
+                    <img class="mySlidesdb slideshowImage img-responsive" src="Images/Databases/Databases3.jpg"
+                         style="width:100%">
+                    <img class="mySlidesdb slideshowImage img-responsive" src="Images/Databases/Databases4.jpg"
+                         style="width:100%">
                 </div>
 
             </div>
-
 
 
         </div>
@@ -226,7 +233,8 @@
 
         <div class="modal-content">
             <span id="AlexaClose" class="close">&times;</span>
-            <h1 class="project-title-text" style="text-align: center"> Tampa Bay Sports Trivia (JavaScript & Alexa Skills Kit)
+            <h1 class="project-title-text" style="text-align: center"> Tampa Bay Sports Trivia (JavaScript & Alexa
+                Skills Kit)
             </h1>
             <p class="project-body-text">
                 Built a trivia game for devices that support Amazon Alexa that asks the user questions, waits for an
@@ -235,12 +243,15 @@
             </p>
             <div class="slideshow-container">
 
-                <<div class="w3-content w3-display-container">
-                <button class="prev w3-button w3-black w3-display-left" onclick="plusDivsAl(-1)">&#10094;</button>
-                <button class="next w3-button w3-black w3-display-right" onclick="plusDivsAl(1)">&#10095;</button>
-                <img class="mySlidesAlexa slideshowImage img-responsive" src="Images/Alexa/Alexa1.jpg" style="width:100%">
-                <img class="mySlidesAlexa slideshowImage img-responsive" src="Images/Alexa/Alexa2.jpg" style="width:100%">
-            </div>
+                <
+                <div class="w3-content w3-display-container">
+                    <button class="prev w3-button w3-black w3-display-left" onclick="plusDivsAl(-1)">&#10094;</button>
+                    <button class="next w3-button w3-black w3-display-right" onclick="plusDivsAl(1)">&#10095;</button>
+                    <img class="mySlidesAlexa slideshowImage img-responsive" src="Images/Alexa/Alexa1.jpg"
+                         style="width:100%">
+                    <img class="mySlidesAlexa slideshowImage img-responsive" src="Images/Alexa/Alexa2.jpg"
+                         style="width:100%">
+                </div>
 
             </div>
         </div>
@@ -258,13 +269,15 @@
                 <div class="w3-content w3-display-container">
                     <button class="prev w3-button w3-black w3-display-left" onclick="plusDivsBM(-1)">&#10094;</button>
                     <button class="next w3-button w3-black w3-display-right" onclick="plusDivsBM(1)">&#10095;</button>
-                    <img class="mySlidesbm slideshowImage img-responsive" src="Images/Maps/Maps1.jpg" style="width:100%">
-                    <img class="mySlidesbm slideshowImage img-responsive" src="Images/Maps/Maps2.jpg" style="width:100%">
-                    <img class="mySlidesbm slideshowImage img-responsive" src="Images/Maps/Maps3.jpg" style="width:100%">
+                    <img class="mySlidesbm slideshowImage img-responsive" src="Images/Maps/Maps1.jpg"
+                         style="width:100%">
+                    <img class="mySlidesbm slideshowImage img-responsive" src="Images/Maps/Maps2.jpg"
+                         style="width:100%">
+                    <img class="mySlidesbm slideshowImage img-responsive" src="Images/Maps/Maps3.jpg"
+                         style="width:100%">
                 </div>
 
             </div>
-
 
 
         </div>
@@ -273,25 +286,31 @@
 
     <div class="row" align="center">
         <div class="col-sm-4">
-            <div class="project-box" id="scheme">
-                <div class="button-text" id="scheme-text-container">
-                    <div class="project-text"> Scheme</div>
+            <a onclick="ProjectClickHandler(3)" style="color: black;">
+                <div class="project-box" id="scheme">
+                    <div class="button-text" id="scheme-text-container">
+                        <div class="project-text"> Scheme</div>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
         <div class="col-sm-4">
-            <div class="project-box" id="yelp">
-                <div class="button-text" id="yelp-text-container">
-                    <div class="project-text"> Yelp Maps</div>
+            <a onclick="ProjectClickHandler(4)" style="color: black;">
+                <div class="project-box" id="yelp">
+                    <div class="button-text" id="yelp-text-container">
+                        <div class="project-text"> Yelp Maps</div>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
         <div class="col-sm-4">
-            <div class="project-box" id="nbody">
-                <div class="button-text" id="nbody-text-container">
-                    <div class="project-text">NBody</div>
+            <a onclick="ProjectClickHandler(5)" style="color: black;">
+                <div class="project-box" id="nbody">
+                    <div class="button-text" id="nbody-text-container">
+                        <div class="project-text">NBody</div>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
         <div id="SchemeModal" class="modal">
 
@@ -305,11 +324,16 @@
                 </p>
                 <div class="slideshow-container">
                     <div class="w3-content w3-display-container">
-                        <button class="prev w3-button w3-black w3-display-left" onclick="plusDivssc(-1)">&#10094;</button>
-                        <button class="next w3-button w3-black w3-display-right" onclick="plusDivssc(1)">&#10095;</button>
-                        <img class="mySlidessc slideshowImage img-responsive" src="Images/Scheme/Scheme1.jpg" style="width:100%">
-                        <img class="mySlidessc slideshowImage img-responsive" src="Images/Scheme/Scheme2.jpg" style="width:100%">
-                        <img class="mySlidessc slideshowImage img-responsive" src="Images/Scheme/Scheme3.jpg" style="width:100%">
+                        <button class="prev w3-button w3-black w3-display-left" onclick="plusDivssc(-1)">&#10094;
+                        </button>
+                        <button class="next w3-button w3-black w3-display-right" onclick="plusDivssc(1)">&#10095;
+                        </button>
+                        <img class="mySlidessc slideshowImage img-responsive" src="Images/Scheme/Scheme1.jpg"
+                             style="width:100%">
+                        <img class="mySlidessc slideshowImage img-responsive" src="Images/Scheme/Scheme2.jpg"
+                             style="width:100%">
+                        <img class="mySlidessc slideshowImage img-responsive" src="Images/Scheme/Scheme3.jpg"
+                             style="width:100%">
                     </div>
                 </div>
             </div>
@@ -323,11 +347,16 @@
                     for the gravitational forces mutually affecting each object based on the mass of each object.</p>
                 <div class="slideshow-container">
                     <div class="w3-content w3-display-container">
-                        <button class="prev w3-button w3-black w3-display-left" onclick="plusDivsNB(-1)">&#10094;</button>
-                        <button class="next w3-button w3-black w3-display-right" onclick="plusDivsNB(1)">&#10095;</button>
-                        <img class="mySlidesnb slideshowImage img-responsive" src="Images/NBody/NBody1.jpg" style="width:100%">
-                        <img class="mySlidesnb slideshowImage img-responsive" src="Images/NBody/NBody2.jpg" style="width:100%">
-                        <img class="mySlidesnb slideshowImage img-responsive" src="Images/NBody/NBody3.jpg" style="width:100%">
+                        <button class="prev w3-button w3-black w3-display-left" onclick="plusDivsNB(-1)">&#10094;
+                        </button>
+                        <button class="next w3-button w3-black w3-display-right" onclick="plusDivsNB(1)">&#10095;
+                        </button>
+                        <img class="mySlidesnb slideshowImage img-responsive" src="Images/NBody/NBody1.jpg"
+                             style="width:100%">
+                        <img class="mySlidesnb slideshowImage img-responsive" src="Images/NBody/NBody2.jpg"
+                             style="width:100%">
+                        <img class="mySlidesnb slideshowImage img-responsive" src="Images/NBody/NBody3.jpg"
+                             style="width:100%">
                     </div>
                 </div>
             </div>
@@ -344,11 +373,16 @@
                 </p>
                 <div class="slideshow-container">
                     <div class="w3-content w3-display-container">
-                        <button class="prev w3-button w3-black w3-display-left" onclick="plusDivsYM(-1)">&#10094;</button>
-                        <button class="next w3-button w3-black w3-display-right" onclick="plusDivsYM(1)">&#10095;</button>
-                        <img class="mySlidesym slideshowImage img-responsive" src="Images/YelpMaps/YelpMaps1.jpg" style="width:100%">
-                        <img class="mySlidesym slideshowImage img-responsive" src="Images/YelpMaps/YelpMaps2.jpg" style="width:100%">
-                        <img class="mySlidesym slideshowImage img-responsive" src="Images/YelpMaps/YelpMaps3.jpg" style="width:100%">
+                        <button class="prev w3-button w3-black w3-display-left" onclick="plusDivsYM(-1)">&#10094;
+                        </button>
+                        <button class="next w3-button w3-black w3-display-right" onclick="plusDivsYM(1)">&#10095;
+                        </button>
+                        <img class="mySlidesym slideshowImage img-responsive" src="Images/YelpMaps/YelpMaps1.jpg"
+                             style="width:100%">
+                        <img class="mySlidesym slideshowImage img-responsive" src="Images/YelpMaps/YelpMaps2.jpg"
+                             style="width:100%">
+                        <img class="mySlidesym slideshowImage img-responsive" src="Images/YelpMaps/YelpMaps3.jpg"
+                             style="width:100%">
                     </div>
                 </div>
 
@@ -363,14 +397,14 @@
          style="color:white"> If you have any questions, about my skills or my projects, please don't hesitate to reach out to me.</div>
     <div class="row">
         <div class="col-sm-12" align="center" id="email">
-            <img class="contact-image img-responsive"  src="Images/Contact/Email.png">
-            <a class="contact-info"  href="mailto:arjunsrinivasan1997@gmail.com" style="padding-top:10px;">arjunsrinivasan1997@gmail.com</a>
+            <img class="contact-image img-responsive" src="Images/Contact/Email.png">
+            <a class="contact-info" href="mailto:arjunsrinivasan1997@gmail.com" style="padding-top:10px;">arjunsrinivasan1997@gmail.com</a>
         </div>
     </div>
     <div class="row">
         <div class="col-sm-12" align="center" id="phone">
-            <img class="contact-image img-responsive"  src="Images/Contact/Phone.png">
-            <a class="contact-info"  href="tel:7272524303">727-252-4303</a>
+            <img class="contact-image img-responsive" src="Images/Contact/Phone.png">
+            <a class="contact-info" href="tel:7272524303">727-252-4303</a>
         </div>
     </div>
     <div class="row">

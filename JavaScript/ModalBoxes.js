@@ -22,15 +22,26 @@ var nbodySpan = document.getElementById("NBodyClose");
 var schemeSpan = document.getElementById("SchemeClose");
 var alexaSpan = document.getElementById("AlexaClose");
 var yelpSpan =document.getElementById("YelpClose");
-// Activating the button onclick functions
-function handler() {
-    databasesModal.style.display = "block";
-
+// Project number starts at top left project, and is zero indexed
+function ProjectClickHandler(project) {
+    if (project === 0) {
+        databasesModal.style.display = "block";
+    } else if (project === 1) {
+        alexaModal.style.display = "block";
+    } else if (project === 2) {
+        bearMapsModal.style.display = "block";
+    } else if (project === 3) {
+        schemeModal.style.display = "block";
+    } else if (project === 4) {
+        yelpModal.style.display = "block";
+    }else if (project === 5) {
+        nbodyModal.style.display = "block";
+    }
 }
 
 /*$('#databases-text-container').on('touchstart tap click touch', function(){
     databasesModal.style.display = "block";
-});*/
+});
 
 bearMapsButton.onclick = function () {
     bearMapsModal.style.display = "block";
@@ -47,6 +58,7 @@ alexaButton.onclick = function () {
 yelpButton.onclick = function () {
     yelpModal.style.display ="block";
 };
+*/
 // Activating the span onclick functions (closes the modal) via the close button
 databasesSpan.onclick = function() {
     databasesModal.style.display = "none";
