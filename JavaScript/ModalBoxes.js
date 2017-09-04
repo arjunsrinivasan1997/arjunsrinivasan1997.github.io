@@ -28,7 +28,7 @@ function handler() {
 
 }
 
-databasesButton.on('click tap',  function(){
+databasesButton.on('click touchstart',  function(){
     databasesModal.style.display = "block";
 });
 
