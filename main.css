@@ -422,8 +422,6 @@ ul.nav a:hover { color: blue !important; }
     background-repeat: no-repeat;
     opacity: 1;
     width:100%;
-
-
 }
 
 #bearmaps:hover > #bearmaps-text-container {
@@ -450,7 +448,7 @@ ul.nav a:hover { color: blue !important; }
 
 }
 
-#Alexa:hover > #Alexa-text-container {
+.project-box:hover > .button-text {
     background-image: url("Images/Misc/ProjectBoxBackground.jpg");
     background-repeat: no-repeat;
     opacity: 1;
