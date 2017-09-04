@@ -996,12 +996,7 @@ ul.nav a:hover { color: blue !important; }
 #facebook-button:hover {
     background-size: 160px;
 }
-/*Fixing ios hover bug*/
-@media (pointer: fine) {
-    a > div {
-        opacity:1;
-    }
-}
+
 
 /* Uncomment this if excess width is appearing on  page */
 /*
