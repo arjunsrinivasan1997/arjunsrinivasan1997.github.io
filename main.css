@@ -481,6 +481,7 @@ ul.nav a:hover { color: blue !important; }
     object-fit: contain;
     margin-left:0px;
     padding-left: 0px;
+    cursor: pointer;
 }
 
 #databases-text-container {
