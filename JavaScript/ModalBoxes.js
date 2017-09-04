@@ -28,7 +28,7 @@ function handler() {
 
 }
 
-databasesButton.on('click touchstart',  function(){
+$('#databases-text-container').on('touchstart click', function(){
     databasesModal.style.display = "block";
 });
 
