@@ -420,7 +420,7 @@ ul.nav a:hover { color: blue !important; }
 #databases:hover > #databases-text-container {
     background-image: url("Images/Misc/ProjectBoxBackground.jpg");
     background-repeat: no-repeat;
-    visibility: visible;
+    opacity: 1;
     width:100%;
 
 
@@ -488,7 +488,7 @@ ul.nav a:hover { color: blue !important; }
 }
 
 #databases-text-container {
-    visibility: hidden;
+    opacity: 0;
     cursor: pointer;
 
 }
