@@ -507,6 +507,7 @@ ul.nav a:hover { color: blue !important; }
 
 #Alexa-text-container {
     visibility: hidden;
+    cursor: pointer;
 }
 
 #yelp-text-container {
