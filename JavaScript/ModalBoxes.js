@@ -28,7 +28,7 @@ function handler() {
 
 }
 
-$('#databases-text-container').on('touchstart click', function(){
+$('#databases-text-container').on('touchstart tap click', function(){
     databasesModal.style.display = "block";
 });
 
