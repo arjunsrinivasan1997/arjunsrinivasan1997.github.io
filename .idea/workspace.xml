@@ -28,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1570">
-              <caret line="357" column="16" lean-forward="true" selection-start-line="357" selection-start-column="16" selection-end-line="357" selection-end-column="16" />
+            <state relative-caret-position="272">
+              <caret line="38" column="80" lean-forward="false" selection-start-line="38" selection-start-column="80" selection-end-line="38" selection-end-column="80" />
               <folding>
                 <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#section#0;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#2;n#section#3;n#body#0;n#!!top" expanded="true" />
@@ -48,7 +48,7 @@
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#5;n#section#3;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#5;n#section#3;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#2;n#div#0;n#div#0;n#div#0;n#div#3;n#div#5;n#section#3;n#body#0;n#!!top" expanded="true" />
-                <element signature="e#13691#13698#1" expanded="true" />
+                <element signature="e#13679#13686#1" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#5;n#section#3;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#div#0;n#div#4;n#div#5;n#section#3;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#2;n#div#0;n#div#0;n#div#0;n#div#4;n#div#5;n#section#3;n#body#0;n#!!top" expanded="true" />
@@ -83,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ModalBoxes.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ModalBoxes.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JavaScript/ModalBoxes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="26" column="39" lean-forward="true" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+            <state relative-caret-position="188">
+              <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -133,8 +133,8 @@
       <find>about-me-ti</find>
       <find>title-text</find>
       <find>contact-t</find>
-      <find>about me</find>
       <find>button-text</find>
+      <find>about me</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -163,9 +163,9 @@
         <option value="$PROJECT_DIR$/JavaScript/schemeSlideShow.js" />
         <option value="$PROJECT_DIR$/JavaScript/NBodySlideShow.js" />
         <option value="$PROJECT_DIR$/JavaScript/yelpMapsSlideShow.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/main.css" />
         <option value="$PROJECT_DIR$/JavaScript/ModalBoxes.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -774,12 +774,12 @@
       <workItem from="1504387191726" duration="545000" />
       <workItem from="1504394074360" duration="13986000" />
       <workItem from="1504490985453" duration="380000" />
-      <workItem from="1504491599749" duration="16060000" />
+      <workItem from="1504491599749" duration="16546000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63822000" />
+    <option name="totallyTimeSpent" value="64308000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -892,7 +892,7 @@
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#5;n#section#3;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#5;n#section#3;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#2;n#div#0;n#div#0;n#div#0;n#div#3;n#div#5;n#section#3;n#body#0;n#!!top" expanded="true" />
-            <element signature="e#13691#13698#1" expanded="true" />
+            <element signature="e#13679#13686#1" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#5;n#section#3;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#div#0;n#div#4;n#div#5;n#section#3;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#2;n#div#0;n#div#0;n#div#0;n#div#4;n#div#5;n#section#3;n#body#0;n#!!top" expanded="true" />
@@ -949,7 +949,7 @@
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#5;n#section#3;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#5;n#section#3;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#2;n#div#0;n#div#0;n#div#0;n#div#3;n#div#5;n#section#3;n#body#0;n#!!top" expanded="true" />
-            <element signature="e#13691#13698#1" expanded="true" />
+            <element signature="e#13679#13686#1" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#5;n#section#3;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#div#0;n#div#4;n#div#5;n#section#3;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#2;n#div#0;n#div#0;n#div#0;n#div#4;n#div#5;n#section#3;n#body#0;n#!!top" expanded="true" />
@@ -998,7 +998,7 @@
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#5;n#section#3;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#5;n#section#3;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#2;n#div#0;n#div#0;n#div#0;n#div#3;n#div#5;n#section#3;n#body#0;n#!!top" expanded="true" />
-            <element signature="e#13691#13698#1" expanded="true" />
+            <element signature="e#13679#13686#1" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#5;n#section#3;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#div#0;n#div#4;n#div#5;n#section#3;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#2;n#div#0;n#div#0;n#div#0;n#div#4;n#div#5;n#section#3;n#body#0;n#!!top" expanded="true" />
@@ -1120,10 +1120,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="483" column="20" lean-forward="true" selection-start-line="483" selection-start-column="20" selection-end-line="483" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website.io.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript/ModalBoxes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1570">
-          <caret line="357" column="16" lean-forward="true" selection-start-line="357" selection-start-column="16" selection-end-line="357" selection-end-column="16" />
+        <state relative-caret-position="272">
+          <caret line="38" column="80" lean-forward="false" selection-start-line="38" selection-start-column="80" selection-end-line="38" selection-end-column="80" />
           <folding>
             <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#section#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#2;n#section#3;n#body#0;n#!!top" expanded="true" />
@@ -1139,7 +1163,7 @@
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#5;n#section#3;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#5;n#section#3;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#2;n#div#0;n#div#0;n#div#0;n#div#3;n#div#5;n#section#3;n#body#0;n#!!top" expanded="true" />
-            <element signature="e#13691#13698#1" expanded="true" />
+            <element signature="e#13679#13686#1" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#5;n#section#3;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#div#0;n#div#4;n#div#5;n#section#3;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#2;n#div#0;n#div#0;n#div#0;n#div#4;n#div#5;n#section#3;n#body#0;n#!!top" expanded="true" />
@@ -1150,22 +1174,6 @@
             <element signature="n#style#0;n#div#1;n#section#4;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#div#0;n#div#2;n#section#4;n#body#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="483" column="20" lean-forward="true" selection-start-line="483" selection-start-column="20" selection-end-line="483" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript/ModalBoxes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="26" column="39" lean-forward="true" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>

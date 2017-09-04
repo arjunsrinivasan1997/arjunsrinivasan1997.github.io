@@ -23,9 +23,9 @@ var schemeSpan = document.getElementById("SchemeClose");
 var alexaSpan = document.getElementById("AlexaClose");
 var yelpSpan =document.getElementById("YelpClose");
 // Activating the button onclick functions
-databasesButton.onclick = function(){
+databasesButton.on('touchstart click', function(){
     databasesModal.style.display = "block";
-};
+});
 bearMapsButton.onclick = function () {
     bearMapsModal.style.display = "block";
 };
