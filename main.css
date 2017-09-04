@@ -170,7 +170,7 @@ ul.nav a:hover { color: blue !important; }
     padding-top: 40px;
     padding-bottom: 0px;
     margin-bottom: 0px;
-    font-size: 4vh;
+    font-size: 35px;
     font-family: 'Carter One', sans-serif;
 }
 #header-name{
@@ -226,15 +226,7 @@ ul.nav a:hover { color: blue !important; }
     width:210px;
     height: 400px;
 }
-#about-me-title {
-    color: black;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-    font-size: 4vh;
-    font-family: 'Carter One', sans-serif;
-}
+
 
 .about-me-text {
     position: relative;
@@ -889,25 +881,11 @@ ul.nav a:hover { color: blue !important; }
     max-height: 100px;
 }
 
-.button-container {
-    position: relative;
 
-    max-height: 100px;
-    max-width: 100px;
-}
 
-.contact-image {
-    width: 7.2vw;
-    height: 12vh;
-    min-width: 30px;
-    min-height: 30px;
-    position: relative;
-    display: inline-block;
-
-}
 
 #contact-text {
-    font-size: 25px;
+    font-size: 20px;
     position: relative;
     font-family: 'Amarante', sans-serif;
 
@@ -915,26 +893,16 @@ ul.nav a:hover { color: blue !important; }
 
 #contact-info-container {
     position: relative;
-    font-size: 20px;
+
     text-align: center;
     color: white;
 }
 
 .contact-info {
     display: inline-block;
+    font-size: 20px;
 }
 
-#phone {
-    top: 12vh;
-    left: 37vw;
-    width: 10%;
-}
-
-#email {
-    top: 10vh;
-    left: 37vw;
-    width: 10%;
-}
 
 #email-text {
     color: rgb(0, 128, 192);
@@ -956,6 +924,10 @@ ul.nav a:hover { color: blue !important; }
     overflow: hidden;
 
 }
+.contact-image{
+    max-height: 150px;
+    max-width:150px;
+}
 
 #email-pic {
     position: relative;
@@ -963,33 +935,26 @@ ul.nav a:hover { color: blue !important; }
 
 }
 
-#github {
-    position: relative;
-    top: 16vh;
-    left: 46vw;
-}
 
-#facebook {
-    position: relative;
-    top: 22vh;
-    left: 46vw
-}
 
 #github-button {
     background-image: url("Images/Misc/GitHub.png");
     width: 100px;
     height: 100px;
-    background-size: 143px;
+    background-size: 150px;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 50%;
     background-clip: border-box;
-    border-right: none;
     transition: background-size 0.2s;
     transition-timing-function: cubic-bezier(.07, 1.41, .82, 1.41);
     display: inline-block;
     text-decoration: none;
     cursor: pointer;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    background-color: white;
 
 }
 
@@ -998,8 +963,6 @@ ul.nav a:hover { color: blue !important; }
 }
 
 #facebook-button {
-    padding: 0;
-    margin: 0;
     background-image: url("Images/Misc/Facebook.png");
     width: 100px;
     height: 100px;
@@ -1024,7 +987,7 @@ ul.nav a:hover { color: blue !important; }
     background-size: 160px;
 }
 
-/* UnComment this if excess width is appearing on your page */
+/* Uncomment this if excess width is appearing on  page */
 /*
 * {
     background: #000 !important;
