@@ -452,8 +452,8 @@ ul.nav a:hover { color: blue !important; }
 
 #Alexa:hover > #Alexa-text-container {
     background-image: url("Images/Misc/ProjectBoxBackground.jpg");
-    visibility: visible;
     background-repeat: no-repeat;
+    opacity: 1;
     width:100%;
 
 }
@@ -506,7 +506,7 @@ ul.nav a:hover { color: blue !important; }
 }
 
 #Alexa-text-container {
-    visibility: hidden;
+    opacity:0;
     cursor: pointer;
 }
 
