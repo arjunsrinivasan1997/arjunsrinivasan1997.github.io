@@ -243,8 +243,8 @@ ul.nav a:hover { color: blue !important; }
 }
 @media only screen and (max-height: 750px) {
     #myPicture {
-        width:150px;
-        height:250px;
+        width:184px;
+        height:350px;
 
     }
 
