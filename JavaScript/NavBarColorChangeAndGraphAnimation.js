@@ -83,7 +83,7 @@ $(document).scroll(function () {
         $('#skills-link').removeClass("active")
         $('#projects-link').addClass("active")
         $('#contact-link').removeClass("active");
-    } else if (position >= top5 ) {
+    } else if (position >= top5 - 200 ) {
         $('#projects-link').removeClass("active")
         $('#contact-link').addClass("active")
     }
