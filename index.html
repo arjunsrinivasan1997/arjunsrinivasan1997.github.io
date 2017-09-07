@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!--SSH TEST-->
 <html lang="en">
 
 <head>
@@ -67,7 +66,7 @@
     </div>
 </section>
 <section id="about-me">
-    <div id="title-text">About Me</div>
+    <div class="title-text">About Me</div>
     <div id="first-row" class="row" align="center">
         <div class="col-sm-12">
             <img id="myPicture" class="img-responsive img-thumbnail" src="Images/Misc/myself.jpg" align="center">
@@ -88,7 +87,7 @@
 
 </section>
 <section id="skills">
-    <div id="title-text">
+    <div class="title-text">
             Skills
     </div>
     <div id="graph-container">
@@ -144,6 +143,14 @@
             </div>
         </div>
 
+        <div class="graph-bar-container">
+            <div class="graph-bar-text">
+                C++
+            </div>
+            <div class="background-container">
+                <div class="bar-background" id="CPlusPlus-bar"></div>
+            </div>
+        </div>
 
         <div class="graph-bar-container">
             <div class="graph-bar-text">
@@ -164,23 +171,25 @@
             </div>
         </div>
 
+
     </div>
 
 </section>
 <section id="projects">
-    <div id="title-text" style="color:black">Projects</div>
+    <div class="title-text" style="color:black">Projects</div>
     <div class="row" align="center">
         <div class="col-sm-4">
-            <a onclick="ProjectClickHandler(0)" style="color: black;">
-                <div onclick="" class="project-box" id="databases">
-                    <div class="button-text" id="databases-text-container">
-                        <div class="project-text"> Databases</div>
+                <a style="color:black" onclick="ProjectClickHandler(3)" >
+                    <div onclick="" class="project-box" id="LMIntern">
+                        <div class="button-text" id="LM-text-container">
+                            <div class="project-text"> Cable Analysis  Neural Network  </div>
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
+
         </div>
         <div class="col-sm-4">
-            <a onclick="ProjectClickHandler(1)" style="color: black;">
+            <a style="color:black" onclick="ProjectClickHandler(1)" >
                 <div onclick="" class="project-box" id="Alexa">
                     <div class="button-text" id="Alexa-text-container">
                         <div class="project-text"> Alexa Skills</div>
@@ -189,10 +198,10 @@
             </a>
         </div>
         <div class="col-sm-4">
-            <a onclick="ProjectClickHandler(2)" style="color: black;">
-                <div onclick="" class="project-box" id="bearmaps">
-                    <div onclick="" class="button-text" id="bearmaps-text-container">
-                        <div class="project-text">BearMaps</div>
+            <a style="color:black" onclick="ProjectClickHandler(4)" >
+                <div onclick="" class="project-box" id="cuddleCub">
+                    <div class="button-text" id="cuddleCub-text-container">
+                        <div class="project-text"> Cuddle Cub </div>
                     </div>
                 </div>
             </a>
@@ -259,7 +268,7 @@
     <div id="BearMapsModal" class="modal">
         <div class="modal-content">
             <span id="BearMapsClose" class="close">&times;</span>
-            <h1 class="project-title-text"> BearMaps (Java) </h1>
+            <h1 class="project-title-text"> Bear Maps (Java) </h1>
             <p class="project-body-text">Built a web based mapping application that supports zooming in and out,
                 mouse based map movement,
                 autocomplete using prefix matching, drawing the shortest path between two points on the map, and
@@ -285,113 +294,98 @@
 
     <div class="row" align="center">
         <div class="col-sm-4">
-            <a onclick="ProjectClickHandler(3)" style="color: black;">
-                <div onclick="" class="project-box" id="scheme">
-                    <div class="button-text" id="scheme-text-container">
-                        <div class="project-text"> Scheme</div>
+            <a style="color:black" onclick="ProjectClickHandler(0)" >
+                <div onclick="" class="project-box" id="databases">
+                    <div class="button-text" id="databases-text-container">
+                        <div class="project-text"> Databases</div>
                     </div>
                 </div>
             </a>
         </div>
         <div class="col-sm-4">
-            <a onclick="ProjectClickHandler(4)" style="color: black;">
-                <div onclick="" class="project-box" id="yelp">
-                    <div class="button-text" id="yelp-text-container">
-                        <div class="project-text"> Yelp Maps</div>
+            <a style="color:black" onclick="ProjectClickHandler(5)" >
+                <div onclick="" class="project-box" id="dataScraping">
+                    <div class="button-text" id="dataScraping-text-container">
+                        <div class="project-text">Indian Police  Data Scraping</div>
                     </div>
                 </div>
             </a>
         </div>
         <div class="col-sm-4">
-            <a onclick="ProjectClickHandler(5)" style="color: black;">
-                <div onclick="" class="project-box" id="nbody">
-                    <div class="button-text" id="nbody-text-container">
-                        <div class="project-text">NBody</div>
+            <a style="color:black" onclick="ProjectClickHandler(2)" >
+                <div onclick="" class="project-box" id="bearmaps">
+                    <div onclick="" class="button-text" id="bearmaps-text-container">
+                        <div class="project-text">BearMaps</div>
                     </div>
                 </div>
             </a>
         </div>
-        <div id="SchemeModal" class="modal">
-
+        <div id="LMModal" class="modal">
             <div class="modal-content">
-                <span id="SchemeClose" class="close">&times;</span>
-                <h1 class="project-title-text"> Scheme (Python)</h1>
-                <p class="project-body-text"> Built an interpreter for the scheme language that supports a wide variety
-                    of features such as,
-                    variable and function definitions, short circuiting logical expressions, tail recursion, and
-                    dynamically scoped procedures
+                <span id="LMClose" class="close">&times;</span>
+                <h1 class="project-title-text"> Cable Analysis Neural Network (Python and TensorFlow)</h1>
+                <p class="project-body-text"> As an Intern at Lockheed Martin during the Summer of 2017, I helped to develop
+                    a neural network that analzyed a drawing of a cable, and the required parts for the cable, in order to
+                    estimate the amount of money that the cable would cost to build. At the end of my Internship, this network had
+                    achieved 80% accuracy, and was being used to help engineers to bid on government contracts.
                 </p>
-                <div class="slideshow-container">
-                    <div class="w3-content w3-display-container">
-                        <button class="prev w3-button w3-black w3-display-left" onclick="plusDivssc(-1)">&#10094;
-                        </button>
-                        <button class="next w3-button w3-black w3-display-right" onclick="plusDivssc(1)">&#10095;
-                        </button>
-                        <img class="mySlidessc slideshowImage img-responsive" src="Images/Scheme/Scheme1.jpg"
-                             style="width:100%">
-                        <img class="mySlidessc slideshowImage img-responsive" src="Images/Scheme/Scheme2.jpg"
-                             style="width:100%">
-                        <img class="mySlidessc slideshowImage img-responsive" src="Images/Scheme/Scheme3.jpg"
-                             style="width:100%">
-                    </div>
-                </div>
             </div>
         </div>
-        <div id="NBodyModal" class="modal">
+        <div id="DataScrapingModal" class="modal">
 
             <div class="modal-content">
-                <span id="NBodyClose" class="close">&times;</span>
-                <h1 class="project-title-text">NBody (Java)</h1>
-                <p class="project-body-text">Built a program simulating the motion of N objects in a plane, accounting
-                    for the gravitational forces mutually affecting each object based on the mass of each object.</p>
+                <span id="DataScrapingClose" class="close">&times;</span>
+                <h1 class="project-title-text">Indian Police Data Scraping (Python and Selenium)</h1>
+                <p class="project-body-text">I worked on a project for a current Economics PhD student at Berkeley, and a Berkeley Econmics Phd in order
+                to scrape data from <a href="http://mha1.nic.in/ipr/ips_ersheet_new/home.aspx" target="_blank" style="color: blue;">an offical Indian Government Webpage</a> in order to give them data about the Indian
+                Police force for a paper that is being written. Additionally, I deployed my program to AWS for consistent and easy use over the long term.</p>
                 <div class="slideshow-container">
                     <div class="w3-content w3-display-container">
-                        <button class="prev w3-button w3-black w3-display-left" onclick="plusDivsNB(-1)">&#10094;
+                        <button class="prev w3-button w3-black w3-display-left" onclick="plusDivsDS(-1)">&#10094;
                         </button>
-                        <button class="next w3-button w3-black w3-display-right" onclick="plusDivsNB(1)">&#10095;
+                        <button class="next w3-button w3-black w3-display-right" onclick="plusDivsDS(1)">&#10095;
                         </button>
-                        <img class="mySlidesnb slideshowImage img-responsive" src="Images/NBody/NBody1.jpg"
+                        <img class="mySlidesds slideshowImage img-responsive" src="Images/DataScraping/DataScraping1.jpg"
                              style="width:100%">
-                        <img class="mySlidesnb slideshowImage img-responsive" src="Images/NBody/NBody2.jpg"
+                        <img class="mySlidesds slideshowImage img-responsive" src="Images/DataScraping/DataScraping2.jpg"
                              style="width:100%">
-                        <img class="mySlidesnb slideshowImage img-responsive" src="Images/NBody/NBody3.jpg"
+                        <img class="mySlidesds slideshowImage img-responsive" src="Images/DataScraping/DataScraping3.jpg"
                              style="width:100%">
                     </div>
                 </div>
             </div>
         </div>
 
-        <div id="YelpMapsModal" class="modal">
+        <div id="CuddleCubModal" class="modal">
             <div class="modal-content">
-                <span id="YelpClose" class="close">&times;</span>
-                <h1 class="project-title-text">Yelp Maps (Python)</h1>
+                <span id="CuddleCubClose" class="close">&times;</span>
+                <h1 class="project-title-text">Cuddle Cub(C++, Python, PostrgeDBS)</h1>
                 <p class="project-body-text">
-                    Created a visualization of restaurant ratings using machine learning and the Yelp academic dataset
-                    to predict the rating a user will give a restaurant, based on the ratings that the user has given
-                    other similar restaurants.
+                    As Cheif Technology Officer for <a target="_blank" href="https://www.cuddle-cub.com" style="color:blue"> Cuddle Cub,</a> I am responsible for the development of hardware and software
+                    that is required to make a sleep tracking teddy bear for children. In this capacity, I designed and built the bear hardware using an Arduino nano,
+                    wrote all of the code for the prototype, allowing it to receive Bluetooth commands and turn on/off lights and music based on the commands,
+                    and developed an algorithm that takes in accelerometer data and estimates how much sleep a child has had during the night.
                 </p>
                 <div class="slideshow-container">
                     <div class="w3-content w3-display-container">
-                        <button class="prev w3-button w3-black w3-display-left" onclick="plusDivsYM(-1)">&#10094;
+                        <button class="prev w3-button w3-black w3-display-left" onclick="plusDivsCC(-1)">&#10094;
                         </button>
-                        <button class="next w3-button w3-black w3-display-right" onclick="plusDivsYM(1)">&#10095;
+                        <button class="next w3-button w3-black w3-display-right" onclick="plusDivsCC(1)">&#10095;
                         </button>
-                        <img class="mySlidesym slideshowImage img-responsive" src="Images/YelpMaps/YelpMaps1.jpg"
+                        <img class="mySlidesCC slideshowImage img-responsive" src="Images/CC/CC1.jpg"
                              style="width:100%">
-                        <img class="mySlidesym slideshowImage img-responsive" src="Images/YelpMaps/YelpMaps2.jpg"
+                        <img class="mySlidesCC slideshowImage img-responsive" src="Images/CC/CC2.jpg"
                              style="width:100%">
-                        <img class="mySlidesym slideshowImage img-responsive" src="Images/YelpMaps/YelpMaps3.jpg"
-                             style="width:100%">
+                        <img class="mySlidesCC slideshowImage img-responsive" src="Images/CC/CC3.jpg" style="width: 100%;">
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
 </section>
 
 <section id="contact">
-    <div id="title-text" style="color:rgb(255,255,192)">Contact</div>
+    <div class="title-text" style="color:rgb(255,255,192)">Contact</div>
     <div id="contact-text" align="center"
          style="color:white"> If you have any questions, about my skills or my projects, please don't hesitate to reach out to me.</div>
     <div class="row">
@@ -426,10 +420,8 @@
 <!-- Script that runs image slideshows -->
 <script src="JavaScript/databasesSlideShow.js"></script>
 <script src="JavaScript/bearMapsSlideShow.js"></script>
-<script src="JavaScript/NBodySlideShow.js"></script>
-<script src="JavaScript/yelpMapsSlideShow.js"></script>
+<script src="JavaScript/CCSlideShow.js"></script>
+<script src="JavaScript/DataScrapingSlideShow.js"></script>
 <script src="JavaScript/AlexaSlideShow.js"></script>
-<script src="JavaScript/schemeSlideShow.js"></script>
-
 </body>
 

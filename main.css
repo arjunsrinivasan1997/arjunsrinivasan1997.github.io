@@ -29,7 +29,7 @@ html, body {
 
 }
 .navbar .navbar-brand {
-    color: #000202;
+    color: #000000;
 }
 .navbar .navbar-brand:hover,
 .navbar .navbar-brand:focus {
@@ -164,7 +164,7 @@ header {
 }
 
 ul.nav a:hover { color: blue !important; }
-#title-text {
+.title-text {
     text-align: center;
     color: white;
     padding-top: 40px;
@@ -362,6 +362,11 @@ ul.nav a:hover { color: blue !important; }
     display: inline-block;
     max-width: 70vw;
 }
+#CPlusPlus-bar{
+    border-radius: 25px;
+    display: inline-block;
+    max-width: 70vw;
+}
 
 #projects {
     height: auto;
@@ -397,13 +402,13 @@ ul.nav a:hover { color: blue !important; }
     background-size: 100% 100%;
 }
 
-#nbody {
-    background-image: url("Images/NBody/NBodyBackground.jpg");
+#cuddleCub {
+    background-image: url("Images/CC/CCBackground.jpg");
     background-size: 100% 100%;
 }
 
-#scheme {
-    background-image: url("Images/Scheme/SchemeBackground.jpg");
+#LMIntern {
+    background-image: url("https://static1.seekingalpha.com/images/marketing_images/fair_use_logos_products/sacl_lmt_lockheed_martin_logo.png");
     background-size: 100% 100%;
 }
 
@@ -412,9 +417,10 @@ ul.nav a:hover { color: blue !important; }
     background-size: 100% 100%;
 }
 
-#yelp {
-    background-image: url("Images/YelpMaps/YelpMapsBackground.jpg");
+#dataScraping {
+    background-image: url("Images/DataScraping/DataScrapingBackground.png");
     background-size: 100% 100%;
+    background-position: center center;
 }
 
 #databases:hover > #databases-text-container {
@@ -432,7 +438,7 @@ ul.nav a:hover { color: blue !important; }
 
 }
 
-#nbody:hover > #nbody-text-container {
+#cuddleCub:hover > #cuddleCub-text-container {
     background-image: url("Images/Misc/ProjectBoxBackground.jpg");
     background-repeat: no-repeat;
     opacity: 1;
@@ -440,7 +446,7 @@ ul.nav a:hover { color: blue !important; }
 
 }
 
-#scheme:hover > #scheme-text-container {
+#LMIntern:hover > #LM-text-container {
     background-image: url("Images/Misc/ProjectBoxBackground.jpg");
     background-repeat: no-repeat;
     opacity: 1;
@@ -464,7 +470,7 @@ ul.nav a:hover { color: blue !important; }
 
 }
 
-#yelp:hover > #yelp-text-container {
+#dataScraping:hover > #dataScraping-text-container {
     background-image: url("Images/Misc/ProjectBoxBackground.jpg");
     background-repeat: no-repeat;
     opacity: 1;
@@ -496,12 +502,12 @@ ul.nav a:hover { color: blue !important; }
     cursor: pointer;
 }
 
-#nbody-text-container {
+#cuddleCub-text-container {
     opacity: 0;
     cursor: pointer;
 }
 
-#scheme-text-container {
+#LM-text-container {
     opacity: 0;
     cursor: pointer;
 }
@@ -511,7 +517,7 @@ ul.nav a:hover { color: blue !important; }
     cursor: pointer;
 }
 
-#yelp-text-container {
+#dataScraping-text-container {
     opacity: 0;
     cursor: pointer;
 }
@@ -539,7 +545,6 @@ ul.nav a:hover { color: blue !important; }
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* Modal Content */
 .modal-content {
     background-color: #fefefe;
     margin: auto;
@@ -553,7 +558,6 @@ ul.nav a:hover { color: blue !important; }
 
 }
 
-/* The Close Button */
 .close {
     color: #000000;
     float: right;
@@ -631,7 +635,7 @@ ul.nav a:hover { color: blue !important; }
     display: none
 }
 
-.mySlidesnb {
+.mySlidesds {
     display: none
 }
 

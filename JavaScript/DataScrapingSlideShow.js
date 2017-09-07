@@ -1,13 +1,13 @@
 var slideIndex = 1;
-showDivssc(slideIndex);
+showDivsDS(slideIndex);
 
-function plusDivssc(n) {
-    showDivssc(slideIndex += n);
+function plusDivsDS(n) {
+    showDivsDS(slideIndex += n);
 }
 
-function showDivssc(n) {
+function showDivsDS(n) {
     var i;
-    var x = document.getElementsByClassName("mySlidessc");
+    var x = document.getElementsByClassName("mySlidesds");
     if (n > x.length) {slideIndex = 1}
     if (n < 1) {slideIndex = x.length} ;
     for (i = 0; i < x.length; i++) {

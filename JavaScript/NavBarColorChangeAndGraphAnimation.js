@@ -13,6 +13,7 @@ var CSSBar = $('#CSS3-bar');
 var JavaScriptBar = $('#JavaScript-bar');
 var JQueryBar = $('#JQuery-bar');
 var SQLBar = $('#SQL-bar');
+var CPlusPlusBar = $('#CPlusPlus-bar');
 $(document).ready(function () {
     navBar.css('background-color','#FFFFFF');
     $('#navbar-nav').css('z-index', '5');
@@ -48,6 +49,8 @@ $(window).resize(function () {
 
         SQLBar.css('animation', '');
         SQLBar.css('width', '40vw');
+        CPlusPlusBar.css('animation','');
+        CPlusPlusBar.css('width','40vw');
         $('#navbar-nav').css('z-index', '5');
 
 
@@ -128,6 +131,10 @@ function animate() {
     SQLBar.css('background-color', '#000');
     SQLBar.css('animation', 'sixtyPercentAnimation 3.5s');
     SQLBar.css('animation-fill-mode', 'forwards');
+
+    CPlusPlusBar.css('background-color', '#000');
+    CPlusPlusBar.css('animation', 'sixtyPercentAnimation 3.5s');
+    CPlusPlusBar.css('animation-fill-mode', 'forwards');
 
 }
 
