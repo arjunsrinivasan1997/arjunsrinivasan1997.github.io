@@ -204,6 +204,7 @@ ul.nav a:hover { color: blue !important; }
     width: 100%;
     background-color: lightblue;
     display: inline-block;
+
 }
 
 .row{
@@ -221,10 +222,9 @@ ul.nav a:hover { color: blue !important; }
 
     background-color: white;
 }
-/* keep ratio of height to width at 3/5*/
 #myPicture{
     width:210px;
-    height: 400px;
+    height: 375px;
 }
 
 
@@ -235,6 +235,7 @@ ul.nav a:hover { color: blue !important; }
     font-size:1.5em;
     width:75%;
     font-family: "Lucida Console", Monaco, monospace;
+    padding-bottom: 27px;
 }
 @media only screen and (max-height: 750px) {
     .about-me-text {

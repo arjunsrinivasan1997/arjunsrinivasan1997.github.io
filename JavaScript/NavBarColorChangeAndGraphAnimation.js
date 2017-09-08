@@ -2,7 +2,7 @@ var top1 = $('#header').offset().top + 10;
 var top2 = $('#about-me').offset().top - 200;
 var top3 = $('#skills').offset().top;
 var top4 = $('#projects').offset().top;
-var top5 = $('#contact').offset().top;
+var top5 = $('#contact').offset().top - 200;
 var navBar = $('.navbar');
 var animated = false;
 var javaBar = $('#java-bar');
@@ -15,7 +15,7 @@ var JQueryBar = $('#JQuery-bar');
 var SQLBar = $('#SQL-bar');
 var CPlusPlusBar = $('#CPlusPlus-bar');
 $(document).ready(function () {
-    navBar.css('background-color','#FFFFFF');
+    navBar.css('background-color', '#FFFFFF');
     $('#navbar-nav').css('z-index', '5');
 });
 $(window).resize(function () {
@@ -49,15 +49,15 @@ $(window).resize(function () {
 
         SQLBar.css('animation', '');
         SQLBar.css('width', '40vw');
-        CPlusPlusBar.css('animation','');
-        CPlusPlusBar.css('width','40vw');
+        CPlusPlusBar.css('animation', '');
+        CPlusPlusBar.css('width', '40vw');
         $('#navbar-nav').css('z-index', '5');
 
 
     }
 
 });
-$(document).scroll(function () {
+function onScroll() {
     $('#navbar-nav').css('z-index', '5');
     //console.log($(document).scrollTop());
     // change color of nav bar
@@ -71,27 +71,31 @@ $(document).scroll(function () {
     if (position >= top1 && position < top2 - 200) {
         $('#about-me-link').removeClass("active")
     }
-    else if (position >= top2 - 200 && position < top3 ) {
+    else if (position >= top2 - 200 && position < top3) {
         $('#skills-link').removeClass("active");
         $('#about-me-link').addClass("active");
-    } else if (position >= top3 - 200 && position < top4 -300) {
+    } else if (position >= top3 - 200 && position < top4 - 300) {
 
         $('#about-me-link').removeClass("active");
-        $('#skills-link').addClass("active")
-        $('#projects-link').removeClass("active")
-    } else if (position >= top4  - 200  && position < top5 ) {
-        $('#skills-link').removeClass("active")
-        $('#projects-link').addClass("active")
+        $('#skills-link').addClass("active");
+        $('#projects-link').removeClass("active");
+    } else if (position >= top4 - 200 && position < top5) {
+        $('#skills-link').removeClass("active");
+        $('#projects-link').addClass("active");
         $('#contact-link').removeClass("active");
-    } else if (position >= top5 - 200 ) {
-        $('#projects-link').removeClass("active")
-        $('#contact-link').addClass("active")
+    } else if (position >= top5 - 200) {
+        $('#projects-link').removeClass("active");
+        $('#contact-link').addClass("active");
     }
+
+}
+$(document).scroll(function () {
+    onScroll()
     // Trigger graph animation
     if (position >= top3 - 200 && position < top4 && !animated) {
         animate();
     }
- });
+});
 function animate() {
     animated = true;
 
@@ -137,4 +141,3 @@ function animate() {
     CPlusPlusBar.css('animation-fill-mode', 'forwards');
 
 }
-
