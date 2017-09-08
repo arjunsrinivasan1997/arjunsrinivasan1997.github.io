@@ -90,7 +90,8 @@ function onScroll() {
 
 }
 $(document).scroll(function () {
-    onScroll()
+    var position = $(document).scrollTop();
+    onScroll();
     // Trigger graph animation
     if (position >= top3 - 200 && position < top4 && !animated) {
         animate();

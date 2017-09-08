@@ -201,7 +201,7 @@ ul.nav a:hover { color: blue !important; }
     padding: 0;
     margin: 0;
     height: auto;
-    width: 100%;
+    width: 120%;
     background-color: lightblue;
     display: inline-block;
 
@@ -223,8 +223,8 @@ ul.nav a:hover { color: blue !important; }
     background-color: white;
 }
 #myPicture{
-    width:210px;
-    height: 375px;
+    width:auto;
+    height: auto;
 }
 
 
@@ -409,18 +409,19 @@ ul.nav a:hover { color: blue !important; }
 }
 
 #LMIntern {
-    background-image: url("https://static1.seekingalpha.com/images/marketing_images/fair_use_logos_products/sacl_lmt_lockheed_martin_logo.png");
+    background-image: url("https://i.ytimg.com/vi/sWMiNqIyVEg/maxresdefault.jpg");
     background-size: 100% 100%;
 }
 
 #Alexa {
-    background-image: url("Images/Alexa/AlexaBackground.jpg");
+
+    background-image: url("Images/Alexa/AlexaBackground.png");
     background-size: 100% 100%;
 }
 
 #dataScraping {
-    background-image: url("Images/DataScraping/DataScrapingBackground.png");
-    background-size: 100% 100%;
+    background-image: url("Images/DataScraping/DataScrapingBackground.jpg");
+    background-size:100% 100%;
     background-position: center center;
 }
 
