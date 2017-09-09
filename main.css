@@ -171,29 +171,29 @@ ul.nav a:hover { color: blue !important; }
     padding-bottom: 0px;
     margin-bottom: 0px;
     font-size: 35px;
-    font-family: 'Carter One', sans-serif;
+    font-family: 'Aldrich', sans-serif;
 }
 #header-name{
-    font-family:'Amethysta',sans-serif;
+    font-family: 'Aldrich', sans-serif;
 }
 #name {
     position: relative;
     top: 25vh;
     font-size: 7vh;
-    font-family: Impact, Charcoal, sans-serif;
+    font-family:'Aldrich', Impact, Charcoal, sans-serif;
 }
 
 #spacer {
     position: relative;
-    top: 27.5vh;
+    top: 25vh;
     width: 150px;
 }
 
 #other-info {
     position: relative;
-    top: 30vh;
+    top: 27vh;
     font-size: 3vh;
-    font-family: Impact, Charcoal, sans-serif;
+    font-family: 'Aldrich', sans-serif;
     padding-bottom: 200px;
 }
 
@@ -234,7 +234,7 @@ ul.nav a:hover { color: blue !important; }
     top: 3vh;
     font-size:1.5em;
     width:75%;
-    font-family: "Lucida Console", Monaco, monospace;
+    font-family: 'Aldrich', sans-serif;
     padding-bottom: 27px;
 }
 @media only screen and (max-height: 750px) {
@@ -244,9 +244,12 @@ ul.nav a:hover { color: blue !important; }
 }
 @media only screen and (max-height: 750px) {
     #myPicture {
-        width:184px;
+        width:262px;
         height:350px;
 
+    }
+    #name{
+        font-size:7vw;
     }
 
 }
@@ -285,7 +288,7 @@ ul.nav a:hover { color: blue !important; }
 
 .graph-bar-text {
     font-size: 3vh;
-    font-family: 'Allerta Stencil', serif;
+    font-family: 'Aldrich', sans-serif;
 
 
 }
@@ -484,7 +487,7 @@ ul.nav a:hover { color: blue !important; }
     height:250px;
     width:330px;
     background-size:105% 100%;
-    font-family: 'Sofia', Impact, Charcoal, sans-serif;
+    font-family: 'Aldrich', sans-serif;
     object-fit: contain;
     margin-left:0px;
     padding-left: 0px;
@@ -529,7 +532,7 @@ ul.nav a:hover { color: blue !important; }
     top: 110px;
     color: white;
     font-size: 25px;
-    font-family: 'Amaranth', sans-serif;
+    font-family: 'Aldrich', sans-serif;
 }
 
 .modal {
@@ -581,12 +584,12 @@ ul.nav a:hover { color: blue !important; }
 .project-title-text {
     font-size: 30px;
     padding-top: 10px;
-    font-family: Impact, Charcoal, sans-serif;
+    font-family: 'Aldrich', sans-serif;
     text-align:center;
 }
 
 .project-body-text {
-    font-family: 'Play', sans-serif;
+    font-family: 'Aldrich', sans-serif;
     font-size: 17px;
     padding: 10px;
 }
@@ -901,7 +904,7 @@ ul.nav a:hover { color: blue !important; }
 #contact-text {
     font-size: 20px;
     position: relative;
-    font-family: 'Amarante', sans-serif;
+    font-family: 'Aldrich', sans-serif;
 
 }
 
