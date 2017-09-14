@@ -16,8 +16,8 @@ html, body {
 
 .navbar-nav> li {
     text-align: center;
-      float: none;
-      display: inline-block;
+    float: none;
+    display: inline-block;
 }
 .navbar {
 
@@ -1012,7 +1012,3 @@ ul.nav a:hover { color: blue !important; }
     color: #0f0 !important;
     outline: solid #f00 1px !important;
 }*/
-
-
-
-
