@@ -71,7 +71,7 @@ function onScroll() {
     if (position >= top1 && position < top2 - 200) {
         $('#about-me-link').removeClass("active")
     }
-    else if (position >= top2 - 200 && position < top3) {
+    else if (position >= top2 - 100 && position < top3) {
         $('#skills-link').removeClass("active");
         $('#about-me-link').addClass("active");
     } else if (position >= top3 - 200 && position < top4 - 300) {
