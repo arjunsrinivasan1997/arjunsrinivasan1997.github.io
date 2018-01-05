@@ -1,7 +1,7 @@
 /**
  * Created by arjunsrinivasan on 6/11/17.
  */
-// Gathering all the variables. Each Modal needs a modal element, a button element and a span element (the close button)
+// Gathering all the variables. Each Modal needs a modal element, a button element and closing button
 var databasesModal = document.getElementById('databasesModal');
 var bearMapsModal = document.getElementById('BearMapsModal');
 var dataScrapingModal = document.getElementById('DataScrapingModal');
@@ -9,12 +9,12 @@ var LMModal = document.getElementById('LMModal');
 var alexaModal = document.getElementById('AlexaModal');
 var CuddleCubModal = document.getElementById('CuddleCubModal');
 
-var databasesSpan = document.getElementById("databasesClose");
-var bearMapsSpan = document.getElementById("BearMapsClose");
-var DataScrapingSpan = document.getElementById("DataScrapingClose");
-var LMSpan = document.getElementById("LMClose");
-var alexaSpan = document.getElementById("AlexaClose");
-var CuddleCubSpan =document.getElementById("CuddleCubClose");
+var databasesClose = document.getElementById("databasesClose");
+var bearMapsClose = document.getElementById("BearMapsClose");
+var DataScrapingClose = document.getElementById("DataScrapingClose");
+var LMClose = document.getElementById("LMClose");
+var alexaClose = document.getElementById("AlexaClose");
+var CuddleCubClose =document.getElementById("CuddleCubClose");
 function ProjectClickHandler(project) {
     if (project === 0) {
         databasesModal.style.display = "block";
@@ -32,23 +32,23 @@ function ProjectClickHandler(project) {
 }
 
 
-// Activating the span onclick functions to close the modal via the close button
-databasesSpan.onclick = function() {
+// Adding functionality to the close button
+databasesClose.onclick = function() {
     databasesModal.style.display = "none";
 };
-bearMapsSpan.onclick = function () {
+bearMapsClose.onclick = function () {
     bearMapsModal.style.display = "none";
 };
-DataScrapingSpan.onclick = function () {
+DataScrapingClose.onclick = function () {
     dataScrapingModal.style.display = "none";
 };
-LMSpan.onclick = function () {
+LMClose.onclick = function () {
     LMModal.style.display = "none";
 };
-alexaSpan.onclick = function () {
+alexaClose.onclick = function () {
     alexaModal.style.display = "none";
 };
-CuddleCubSpan.onclick = function () {
+CuddleCubClose.onclick = function () {
     CuddleCubModal.style.display = "none";
 };
 // Closes the modal if the viewer clicks anywhere outside of the modal

@@ -18,6 +18,14 @@ $(document).ready(function () {
     navBar.css('background-color', '#FFFFFF');
     $('#navbar-nav').css('z-index', '5');
 });
+$(document).scroll(function () {
+    var position = $(document).scrollTop();
+    onScroll();
+    // Trigger graph animation
+    if (position >= top3 - 200 && position < top4 && !animated) {
+        animate();
+    }
+});
 $(window).resize(function () {
     top1 = $('#header').offset().top + 10;
     top2 = $('#about-me').offset().top - 200;
@@ -89,14 +97,7 @@ function onScroll() {
     }
 
 }
-$(document).scroll(function () {
-    var position = $(document).scrollTop();
-    onScroll();
-    // Trigger graph animation
-    if (position >= top3 - 200 && position < top4 && !animated) {
-        animate();
-    }
-});
+
 function animate() {
     animated = true;
 
