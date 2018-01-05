@@ -8,7 +8,7 @@ html, body {
     height:10px;
 }
 #header-container {
-    background-image: url("Images/Misc/Berkeley.jpg") ;
+    background-image: url("Images/Misc/Berkeley.jpg");
     background-size: 100% 100%;
     width: 100%;
     height: 100vh;
@@ -212,16 +212,9 @@ ul.nav a:hover { color: blue !important; }
 .row{
     padding-bottom: 50px;
 }
-#grid-container{
+#first-row{
     margin-top: 10px;
     padding-top:30px;
-    display:grid;
-    grid-template-areas:
-            "i . . ."
-            "i t t t"
-            "i t t t"
-            "i . . .";
-
 }
 #image-container {
 
@@ -233,8 +226,7 @@ ul.nav a:hover { color: blue !important; }
 }
 #myPicture{
     width:auto;
-    height: auto;
-    grid-area: i;
+    height: 40vh;
 }
 
 
@@ -246,11 +238,10 @@ ul.nav a:hover { color: blue !important; }
     width:75%;
     font-family: 'Aldrich', sans-serif;
     padding-bottom: 27px;
-
 }
+
 #ab1 {
     position: relative;
-    grid-area: t;
 
 }
 
