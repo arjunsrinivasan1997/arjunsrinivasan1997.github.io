@@ -1,11 +1,16 @@
 html, body {
     width: 100%;
     height: 100%;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+
+
 }
 .title-spacer{
     height:10px;
+}
+section {
+    max-width:100%
 }
 #header-container {
     background-image: url("Images/Misc/Berkeley.jpg");
@@ -156,47 +161,47 @@ header {
     font-size:15px;
     text-align:center;
 }
-#test{
-    color:black;
-}
 
 #nav-bar {
     height: 5vh;
 
 }
 
+
 ul.nav a:hover { color: blue !important; }
 .title-text {
     text-align: center;
     color: white;
     padding-top: 40px;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
+    padding-bottom: 0;
+    margin-bottom: 0;
     font-size: 35px;
     font-family: 'Aldrich', sans-serif;
 }
 #header-name{
     font-family: 'Aldrich', sans-serif;
 }
+.text-container{
+    position:relative;
+    top:20vh;
+}
 #name {
     position: relative;
-    top: 25vh;
-    font-size: 7vh;
+
+    font-size: 50px;
     font-family:'Aldrich', Impact, Charcoal, sans-serif;
 }
 
 #spacer {
     position: relative;
-    top: 25vh;
+
     width: 150px;
 }
 
 #other-info {
     position: relative;
-    top: 27vh;
-    font-size: 3vh;
+    font-size:20px;
     font-family: 'Aldrich', sans-serif;
-    padding-bottom: 200px;
 }
 
 #about-me {
@@ -225,8 +230,10 @@ ul.nav a:hover { color: blue !important; }
     background-color: white;
 }
 #myPicture{
-    width:auto;
-    height: 40vh;
+    height:auto;
+    max-width: 100%;
+    display:block;
+
 }
 
 
@@ -363,6 +370,13 @@ ul.nav a:hover { color: blue !important; }
     height: auto;
     background-color: white;
 }
+.grid-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    grid-auto-rows:auto;
+    grid-gap: 0px;
+    margin-bottom:20px;
+}
 
 .row-container {
     padding-top: 20px;
@@ -370,17 +384,11 @@ ul.nav a:hover { color: blue !important; }
     text-align: center;
 }
 
-.project-box {
-    position: relative;
-    top: 1vh;
-    border: black;
-    border: solid;
-    margin-bottom: 1vw;
-    margin-left: 0;
-    margin-right: 0;
-    width: 73%;
-    height: 33%;
-    max-width:400px;
+@media screen and (max-width: 800px) {
+    .grid-container{
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    }
+
 }
 #databases {
     background-image: url("Images/Databases/DatabasesBackground.jpg");
@@ -649,13 +657,18 @@ ul.nav a:hover { color: blue !important; }
     margin: auto;
 }
 
-.slideshowImage {
-    display: block;
-    align-content: center;
-    max-height:700px;
-
-
+.slideshowImageContainer {
+    height: 700px;
+    width: 100%;
+    overflow: hidden;
 }
+.slideshowImageContainer img {
+    object-fit: contain;
+    height: auto;
+    width: 100%;
+    max-height:700px;
+}
+
 .slider-holder
 {
     width: 800px;
@@ -722,12 +735,11 @@ ul.nav a:hover { color: blue !important; }
 }
 
 .prev, .next {
+    position:absolute;
+    top:50%;
     cursor: pointer;
-    position: absolute;
-    top: 50%;
+    vertical-align: middle;
     width: auto;
-    padding: 16px;
-    margin-top: -22px;
     color: white;
     font-weight: bold;
     font-size: 18px;
@@ -990,12 +1002,18 @@ ul.nav a:hover { color: blue !important; }
 #facebook-button:hover {
     background-size: 160px;
 }
+.maxwidth{
+    max-width:100%;
+}
+
 
 
 /* Uncomment this if excess width is appearing on  page */
 /*
+
 * {
     background: #000 !important;
     color: #0f0 !important;
     outline: solid #f00 1px !important;
+
 }*/

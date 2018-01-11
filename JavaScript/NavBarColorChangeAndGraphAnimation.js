@@ -1,8 +1,4 @@
-var top1 = $('#header').offset().top + 10;
-var top2 = $('#about-me').offset().top - 200;
-var top3 = $('#skills').offset().top;
-var top4 = $('#projects').offset().top;
-var top5 = $('#contact').offset().top - 200;
+var top1,top2,top3,top4,top5;
 var navBar = $('.navbar');
 var animated = false;
 var javaBar = $('#java-bar');
@@ -27,11 +23,7 @@ $(document).scroll(function () {
     }
 });
 $(window).resize(function () {
-    top1 = $('#header').offset().top + 10;
-    top2 = $('#about-me').offset().top - 200;
-    top3 = $('#skills').offset().top;
-    top4 = $('#projects').offset().top;
-    top5 = $('#contact').offset().top;
+    gatherOffsets();
     // Keeps bar widths proportional to new container width if window is resized
     if (animated) {
         javaBar.css('animation', '');
@@ -65,7 +57,16 @@ $(window).resize(function () {
     }
 
 });
+function gatherOffsets(){
+    top1 = $('#header').offset().top + 10;
+    top2 = $('#about-me').offset().top - 200;
+    top3 = $('#skills').offset().top;
+    top4 = $('#projects').offset().top;
+    top5 = $('#contact').offset().top - 200;
+
+}
 function onScroll() {
+    gatherOffsets();
     $('#navbar-nav').css('z-index', '5');
     //console.log($(document).scrollTop());
     // change color of nav bar

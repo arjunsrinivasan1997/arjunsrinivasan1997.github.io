@@ -47,28 +47,32 @@
             </div>
         </nav>
 
-
-        <div id="name" align="center">
-                Arjun Srinivasan
+        <div class="text-container">
+            <div id="name" align="center">
+              Arjun Srinivasan
             </div>
-        <hr id="spacer">
-        <div id="other-info" align="center">
-            <p>
-                B.A. Computer Science
-                <br>
-                University of California-Berkeley
-            </p>
-            <a type="button" class="btn btn-default" href="#about-me" style="font-size:18px;">About Me</a>
-            <a type="button" class="btn btn-default" href="ResumeCollege.pdf" target="_blank" style="font-size:18px;">Resume</a>
+            <hr id="spacer">
+            <div id="other-info" align="center">
+                <p>
+                    B.A. Computer Science
+                    <br>
+                    University of California-Berkeley
+                </p>
+                <a type="button" class="btn btn-default" href="#about-me" style="font-size:18px;">About Me</a>
+                <a type="button" class="btn btn-default" href="ResumeCollege.pdf" target="_blank"
+                   style="font-size:18px;">Resume</a>
+
+            </div>
 
         </div>
+
 
     </div>
 </section>
 <section id="about-me">
     <div class="title-spacer"></div>
     <div class="title-text">About Me</div>
-    <div id="grid-container" align="center">
+    <div align="center">
         <img id="myPicture" src="Images/Misc/myself.jpg" align="center">
         <div class="about-me-text" id="ab1" align="center">
             <p>
@@ -78,7 +82,6 @@
             </p>
         </div>
     </div>
-
 
 
 </section>
@@ -173,35 +176,55 @@
 <section id="projects">
     <div class="title-spacer"></div>
     <div class="title-text" style="color:black">Projects</div>
-    <div class="row" align="center" style="padding-bottom:0px;">
-        <div class="col-sm-4">
-            <a style="color:black" onclick="ProjectClickHandler(3)">
-                <div onclick="" class="project-box" id="LMIntern">
-                    <div class="button-text" id="LM-text-container">
-                        <div class="project-text"> Cable Analysis  Neural Network  </div>
-                    </div>
-                </div>
-            </a>
+    <div class="grid-container" align="center">
 
-        </div>
-        <div class="col-sm-4">
-            <a style="color:black" onclick="ProjectClickHandler(1)">
-                <div onclick="" class="project-box" id="Alexa">
-                    <div class="button-text" id="Alexa-text-container">
-                        <div class="project-text"> Alexa Skills</div>
-                    </div>
+        <a style="color:black" onclick="ProjectClickHandler(3)">
+            <div onclick="" class="project-box" id="LMIntern">
+                <div class="button-text" id="LM-text-container">
+                    <div class="project-text"> Cable Analysis  Neural Network  </div>
                 </div>
-            </a>
-        </div>
-        <div class="col-sm-4">
-            <a style="color:black" onclick="ProjectClickHandler(4)">
-                <div onclick="" class="project-box" id="cuddleCub">
-                    <div class="button-text" id="cuddleCub-text-container">
-                        <div class="project-text"> Cuddle Cub </div>
-                    </div>
+            </div>
+        </a>
+
+
+        <a style="color:black" onclick="ProjectClickHandler(1)">
+            <div onclick="" class="project-box" id="Alexa">
+                <div class="button-text" id="Alexa-text-container">
+                    <div class="project-text"> Alexa Skills</div>
                 </div>
-            </a>
-        </div>
+            </div>
+        </a>
+
+        <a style="color:black" onclick="ProjectClickHandler(4)">
+            <div onclick="" class="project-box" id="cuddleCub">
+                <div class="button-text" id="cuddleCub-text-container">
+                    <div class="project-text"> Cuddle Cub </div>
+                </div>
+            </div>
+        </a>
+        <a style="color:black" onclick="ProjectClickHandler(0)">
+            <div onclick="" class="project-box" id="databases">
+                <div class="button-text" id="databases-text-container">
+                    <div class="project-text"> Databases</div>
+                </div>
+            </div>
+        </a>
+
+        <a style="color:black" onclick="ProjectClickHandler(5)">
+            <div onclick="" class="project-box" id="dataScraping">
+                <div class="button-text" id="dataScraping-text-container">
+                    <div class="project-text">Indian Police  Data Scraping</div>
+                </div>
+            </div>
+        </a>
+
+        <a style="color:black" onclick="ProjectClickHandler(2)">
+            <div onclick="" class="project-box" id="bearmaps">
+                <div onclick="" class="button-text" id="bearmaps-text-container">
+                    <div class="project-text">BearMaps</div>
+                </div>
+            </div>
+        </a>
     </div>
     <div id="databasesModal" class="modal">
 
@@ -292,115 +315,87 @@
     </div>
 
 
-    <div class="row" align="center">
-        <div class="col-sm-4">
-            <a style="color:black" onclick="ProjectClickHandler(0)">
-                <div onclick="" class="project-box" id="databases">
-                    <div class="button-text" id="databases-text-container">
-                        <div class="project-text"> Databases</div>
-                    </div>
-                </div>
-            </a>
+    <div id="LMModal" class="modal">
+        <div class="modal-content">
+            <span id="LMClose" class="close">&times;</span>
+            <h1 class="project-title-text"> Cable Analysis Neural Network (Python and TensorFlow)</h1>
+            <p class="project-body-text"> As an Intern at Lockheed Martin during the Summer of 2017, I helped to
+                develop
+                a neural network that analzyed a drawing of a cable, and the required parts for the cable, in order
+                to
+                estimate the amount of money that the cable would cost to build. At the end of my Internship, this
+                network had
+                achieved 80% accuracy, and was being used to help engineers to bid on government contracts.(Note:
+                Due to the fact that
+                all of the work I did was for a private company, I am unable to post any screenshots or samples of
+                my code)
+            </p>
         </div>
-        <div class="col-sm-4">
-            <a style="color:black" onclick="ProjectClickHandler(5)">
-                <div onclick="" class="project-box" id="dataScraping">
-                    <div class="button-text" id="dataScraping-text-container">
-                        <div class="project-text">Indian Police  Data Scraping</div>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-sm-4">
-            <a style="color:black" onclick="ProjectClickHandler(2)">
-                <div onclick="" class="project-box" id="bearmaps">
-                    <div onclick="" class="button-text" id="bearmaps-text-container">
-                        <div class="project-text">BearMaps</div>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div id="LMModal" class="modal">
-            <div class="modal-content">
-                <span id="LMClose" class="close">&times;</span>
-                <h1 class="project-title-text"> Cable Analysis Neural Network (Python and TensorFlow)</h1>
-                <p class="project-body-text"> As an Intern at Lockheed Martin during the Summer of 2017, I helped to
-                    develop
-                    a neural network that analzyed a drawing of a cable, and the required parts for the cable, in order
-                    to
-                    estimate the amount of money that the cable would cost to build. At the end of my Internship, this
-                    network had
-                    achieved 80% accuracy, and was being used to help engineers to bid on government contracts.(Note:
-                    Due to the fact that
-                    all of the work I did was for a private company, I am unable to post any screenshots or samples of
-                    my code)
-                </p>
-            </div>
-        </div>
-        <div id="DataScrapingModal" class="modal">
+    </div>
+    <div id="DataScrapingModal" class="modal">
 
-            <div class="modal-content">
-                <span id="DataScrapingClose" class="close">&times;</span>
-                <h1 class="project-title-text">Indian Police Data Scraping (Python and Selenium)</h1>
-                <p class="project-body-text">I worked on a project for a current Economics PhD student at Berkeley, and
-                    a Berkeley Econmics Phd in order
-                    to scrape data from <a href="http://mha1.nic.in/ipr/ips_ersheet_new/home.aspx" target="_blank"
-                                           style="color: blue;">an offical Indian Government Webpage</a> in order to
-                    give them data about the Indian
-                    Police force for a paper that is being written. Additionally, I deployed my program to AWS for
-                    consistent and easy use over the long term.</p>
-                <div class="slideshow-container">
-                    <div class="w3-content w3-display-container">
-                        <button class="prev w3-button w3-black w3-display-left" onclick="plusDivsDS(-1)">&#10094;
-                        </button>
-                        <button class="next w3-button w3-black w3-display-right" onclick="plusDivsDS(1)">&#10095;
-                        </button>
-                        <img class="mySlidesds slideshowImage img-responsive"
-                             src="Images/DataScraping/DataScraping1.jpg"
-                             style="width:100%">
-                        <img class="mySlidesds slideshowImage img-responsive"
-                             src="Images/DataScraping/DataScraping2.jpg"
-                             style="width:100%">
-                        <img class="mySlidesds slideshowImage img-responsive"
-                             src="Images/DataScraping/DataScraping3.jpg"
-                             style="width:100%">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="CuddleCubModal" class="modal">
-            <div class="modal-content">
-                <span id="CuddleCubClose" class="close">&times;</span>
-                <h1 class="project-title-text">Cuddle Cub(C++, Python, PostrgeDBS)</h1>
-                <p class="project-body-text">
-                    As Chief Technology Officer for <a target="_blank" href="https://www.cuddle-cub.com"
-                                                       style="color:blue"> Cuddle Cub,</a> I am responsible for the
-                    development of hardware and software
-                    that is required to make a sleep tracking teddy bear for children. In this capacity, I designed and
-                    built the bear hardware using an Arduino nano,
-                    wrote all of the code for the prototype, allowing it to receive Bluetooth commands and turn on/off
-                    lights and music based on the commands,
-                    and developed an algorithm that takes in accelerometer data and estimates how much sleep a child has
-                    had during the night.
-                </p>
-                <div class="slideshow-container">
-                    <div class="w3-content w3-display-container">
-                        <button class="prev w3-button w3-black w3-display-left" onclick="plusDivsCC(-1)">&#10094;
-                        </button>
-                        <button class="next w3-button w3-black w3-display-right" onclick="plusDivsCC(1)">&#10095;
-                        </button>
-                        <img class="mySlidesCC slideshowImage img-responsive" src="Images/CC/CC1.jpg"
-                             style="width:100%">
-                        <img class="mySlidesCC slideshowImage img-responsive" src="Images/CC/CC2.jpg"
-                             style="width:100%">
-                        <img class="mySlidesCC slideshowImage img-responsive" src="Images/CC/CC3.jpg"
-                             style="width: 100%;">
-                    </div>
+        <div class="modal-content">
+            <span id="DataScrapingClose" class="close">&times;</span>
+            <h1 class="project-title-text">Indian Police Data Scraping (Python and Selenium)</h1>
+            <p class="project-body-text">I worked on a project for a current Economics PhD student at Berkeley, and
+                a Berkeley Econmics Phd in order
+                to scrape data from <a href="http://mha1.nic.in/ipr/ips_ersheet_new/home.aspx" target="_blank"
+                                       style="color: blue;">an offical Indian Government Webpage</a> in order to
+                give them data about the Indian
+                Police force for a paper that is being written. Additionally, I deployed my program to AWS for
+                consistent and easy use over the long term.</p>
+            <div class="slideshow-container">
+                <div class="w3-content w3-display-container">
+                    <button class="prev w3-button w3-black w3-display-left" onclick="plusDivsDS(-1)">&#10094;
+                    </button>
+                    <button class="next w3-button w3-black w3-display-right" onclick="plusDivsDS(1)">&#10095;
+                    </button>
+                    <img class="mySlidesds slideshowImage img-responsive"
+                         src="Images/DataScraping/DataScraping1.jpg"
+                         style="width:100%">
+                    <img class="mySlidesds slideshowImage img-responsive"
+                         src="Images/DataScraping/DataScraping2.jpg"
+                         style="width:100%">
+                    <img class="mySlidesds slideshowImage img-responsive"
+                         src="Images/DataScraping/DataScraping3.jpg"
+                         style="width:100%">
                 </div>
             </div>
         </div>
     </div>
+
+    <div id="CuddleCubModal" class="modal">
+        <div class="modal-content">
+            <span id="CuddleCubClose" class="close">&times;</span>
+            <h1 class="project-title-text">Cuddle Cub(C++, Python, PostrgeDBS)</h1>
+            <p class="project-body-text">
+                As Chief Technology Officer for <a target="_blank" href="https://www.cuddle-cub.com"
+                                                   style="color:blue"> Cuddle Cub,</a> I am responsible for the
+                development of hardware and software
+                that is required to make a sleep tracking teddy bear for children. In this capacity, I designed and
+                built the bear hardware using an Arduino nano,
+                wrote all of the code for the prototype, allowing it to receive Bluetooth commands and turn on/off
+                lights and music based on the commands,
+                and developed an algorithm that takes in accelerometer data and estimates how much sleep a child has
+                had during the night.
+            </p>
+            <div class="slideshow-container">
+                <div class="w3-content w3-display-container">
+                    <button class="prev w3-button w3-black w3-display-left" onclick="plusDivsCC(-1)">&#10094;
+                    </button>
+                    <button class="next w3-button w3-black w3-display-right" onclick="plusDivsCC(1)">&#10095;
+                    </button>
+                    <img class="mySlidesCC slideshowImage img-responsive" src="Images/CC/CC1.jpg"
+                         style="width:100%">
+                    <img class="mySlidesCC slideshowImage img-responsive" src="Images/CC/CC2.jpg"
+                         style="width:100%">
+                    <img class="mySlidesCC slideshowImage img-responsive" src="Images/CC/CC3.jpg"
+                         style="width: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+
 </section>
 
 <section id="contact">
@@ -408,19 +403,19 @@
     <div class="title-text" style="color:rgb(255,255,192)">Contact</div>
     <div id="contact-text" align="center"
          style="color:white"> If you have any questions, about my skills or my projects, please don't hesitate to reach out to me.</div>
-    <div class="row">
+    <div class="row maxwidth">
         <div class="col-sm-12" align="center" id="email">
             <img class="contact-image img-responsive" src="Images/Contact/Email.png">
             <a class="contact-info" href="mailto:arjunsrinivasan1997@gmail.com" style="padding-top:10px;">arjunsrinivasan1997@gmail.com</a>
         </div>
     </div>
-    <div class="row">
+    <div class="row maxwidth">
         <div class="col-sm-12" align="center" id="phone">
             <img class="contact-image img-responsive" src="Images/Contact/Phone.png">
             <a class="contact-info" href="tel:7272524303">727-252-4303</a>
         </div>
     </div>
-    <div class="row">
+    <div class="row maxwidth">
         <div class="col-sm-2 col-sm-offset-4 text-center">
             <a id="github-button" href="https://github.com/arjunsrinivasan1997" target="_blank"></a>
         </div>
@@ -428,7 +423,7 @@
             <a id="facebook-button" href="https://facebook.com/arjun.srinivasan.73" target="_blank"></a>
         </div>
     </div>
-    <div class="row">
+    <div class="row maxwidth">
         <div class="col-sm-2 col-sm-offset-5 text-center">
             <a type="button" class="btn btn-default" href="#header" style="font-size:18px;">Top</a>
         </div>
