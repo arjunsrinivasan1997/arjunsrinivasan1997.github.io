@@ -538,7 +538,7 @@ button:focus,
     background : -webkit-linear-gradient(
             top,
             transparent 0%,
-            rgba(0, 0, 0, 0.5) 100%
+            rgba(1, 1, 1, 1) 100%
     );
     }
 
