@@ -1,7 +1,10 @@
 "use client";
 
-import { ArrowUpRight, Github } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
+import { githubLink } from "./social-links";
+
+const GithubIcon = githubLink.icon;
 
 const featuredProjects = [
   {
@@ -85,10 +88,10 @@ export function Projects() {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-foreground hover:text-primary transition-colors"
-                      aria-label="GitHub repository"
+                      className="text-muted-foreground hover:text-primary transition-colors duration-200"
+                      aria-label={githubLink.label}
                     >
-                      <Github className="size-5" />
+                      <GithubIcon className="size-5" />
                     </Link>
                   )}
                 </div>

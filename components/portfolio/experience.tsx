@@ -35,7 +35,7 @@ const experiences = [
     tabLabel: "TrueCar",
     title: "Data Engineer",
     url: "https://www.truecar.com",
-    range: "2018 — 2020",
+    range: "2020 — 2021",
     duties: [
       "Developed an entirely new data pipeline that facilitated the processing of thousands of new records per day for Ford and Acura vehicles.",
       "Optimized algorithm for processing new car data, reducing overall execution time by 20%.",
@@ -80,7 +80,7 @@ export function Experience() {
                 "border-b-2 md:border-b-0 md:border-l-2 -mb-px md:mb-0 md:-ml-px",
                 activeTab === index
                   ? "text-primary border-primary bg-secondary"
-                  : "text-muted-foreground border-transparent"
+                  : "text-muted-foreground border-transparent",
               )}
             >
               {exp.tabLabel}
@@ -95,7 +95,7 @@ export function Experience() {
               key={exp.company}
               className={cn(
                 "space-y-4",
-                activeTab === index ? "block" : "hidden"
+                activeTab === index ? "block" : "hidden",
               )}
             >
               <h3 className="text-xl font-medium text-foreground">

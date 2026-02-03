@@ -34,7 +34,7 @@ export function Navigation() {
     const sections = navLinks
       .map((link) => document.querySelector(link.href))
       .filter(
-        (section): section is HTMLElement => section instanceof HTMLElement
+        (section): section is HTMLElement => section instanceof HTMLElement,
       );
 
     if (sections.length === 0) {
@@ -96,7 +96,7 @@ export function Navigation() {
 
   const handleNavClick = (
     event: React.MouseEvent<HTMLAnchorElement>,
-    href: string
+    href: string,
   ) => {
     if (!href.startsWith("#")) {
       return;
@@ -120,7 +120,7 @@ export function Navigation() {
           "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
           isScrolled
             ? "bg-background/90 backdrop-blur-md shadow-lg py-4"
-            : "py-6"
+            : "py-6",
         )}
       >
         <nav className="max-w-6xl mx-auto px-6 flex items-center justify-between">
@@ -149,7 +149,7 @@ export function Navigation() {
                     "text-sm transition-colors duration-200",
                     activeSection === link.href
                       ? "text-primary font-semibold"
-                      : "text-muted-foreground hover:text-primary"
+                      : "text-muted-foreground hover:text-primary",
                   )}
                 >
                   {link.name}
@@ -189,7 +189,7 @@ export function Navigation() {
           "fixed inset-0 z-40 bg-background/95 backdrop-blur-md md:hidden transition-all duration-300",
           isMobileMenuOpen
             ? "opacity-100 pointer-events-auto"
-            : "opacity-0 pointer-events-none"
+            : "opacity-0 pointer-events-none",
         )}
       >
         <nav className="flex flex-col items-center justify-center h-full">
@@ -203,7 +203,7 @@ export function Navigation() {
                     "text-lg transition-colors duration-200",
                     activeSection === link.href
                       ? "text-primary"
-                      : "text-foreground hover:text-primary"
+                      : "text-foreground hover:text-primary",
                   )}
                 >
                   {link.name}

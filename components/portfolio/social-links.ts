@@ -18,18 +18,18 @@ export const emailLink: SocialLink = {
   external: true,
 };
 
-export const socialLinks: SocialLink[] = [
-  {
-    icon: SiGithub,
-    href: "https://github.com/arjunsrinivasan1997/",
-    label: "GitHub",
-    external: true,
-  },
-  {
-    icon: SiLinkedin,
-    href: "https://www.linkedin.com/in/arjunsrinivasan1997/",
-    label: "LinkedIn",
-    external: true,
-  },
-  emailLink,
-];
+export const githubLink: SocialLink = {
+  icon: SiGithub,
+  href: "https://github.com/arjunsrinivasan1997/",
+  label: "GitHub",
+  external: true,
+};
+
+export const linkedinLink: SocialLink = {
+  icon: SiLinkedin,
+  href: "https://www.linkedin.com/in/arjunsrinivasan1997/",
+  label: "LinkedIn",
+  external: true,
+};
+
+export const socialLinks: SocialLink[] = [githubLink, linkedinLink, emailLink];
