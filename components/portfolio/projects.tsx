@@ -45,7 +45,7 @@ export function Projects() {
               <p className="text-primary font-mono text-sm">Featured Project</p>
               <h3 className="text-2xl font-bold text-foreground leading-tight">
                 {project.external ? (
-                  <Link
+                  <a
                     href={project.external}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -53,7 +53,7 @@ export function Projects() {
                   >
                     {project.title}
                     <ArrowUpRight className="size-4" />
-                  </Link>
+                  </a>
                 ) : (
                   <span className="inline-block rounded bg-primary/20 px-3 py-2">
                     {project.title}
